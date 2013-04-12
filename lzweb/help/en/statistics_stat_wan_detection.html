@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Statistics/WAN Detection</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+<h1>WAN Detection</h1>
+<p>
+<body>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td>WAN Link</td><td>Select the WAN link to display its connection status.</td>
+		<td>Automatic Refresh</td><td>The table of WAN Detection below will be automatically refreshed based on the time frequency option selected here.</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="5">WAN Detection</td><td colspan="2">This table shows the statistical data of WAN detection. These data can be used as reference to configure the parameters in [System/WAN Detection]. The WAN Detection table shows <b>Number of Requests</b>, <b>Number of Replies</b>, and <b>Success Ratio %</b> for each target IP listed in [System/WAN Detection/Target List]. Under circumstances of no disconnection, Success Ratio indicates the reliability of the IP, whether or not it is good for WAN Detection. IP addresses with high success ratio close to 100% are highly recommended.</td>
+	</tr>
+	<tr>
+		<td>Destination IP Address</td><td>The IP addresses whose connections are to be detected.</td>
+	</tr>
+	<tr>
+		<td>Number of Requests</td><td>Number of attempts sent out to the destination IP accumulated to date.</td>
+	</tr>
+	<tr>
+		<td>Number of Replies</td><td>Number of replies received in this WAN link so far. </td>
+	</tr>
+	<tr>
+		<td>Success Ratio (%)</td><td>The percentage obtained from the result of Number of Replies divided by Number of Requests. Higher ratio indicates the WAN link being more stable.</td>
+	</tr>	
+</table>	
+</body>
+</html>

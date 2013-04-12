@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>Service/Firewall</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>防火牆</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="60">IPv4 規則設定 </td><td colspan="3">在這個表格裡可以針對每條規則設定來源、目的地、服務、處理、紀錄</td>
+	</tr>
+	<tr>
+		<td rowspan="18">來源</td>
+	</tr>
+	<tr>
+		<td>IPv4 地址</td><td>比對來自單一IP的封包，例如：192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 地址範圍</td><td>比對來自一段IP地址的封包，用在某幾台主機，例如：192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>子網路/遮罩</td><td>比對來自某一個網段的封包，例如： 192.168.1.0/255.255.255.0</td>
+	<tr>
+	<tr>
+		<td>區域網路</td><td>比對來自區域網路的任何封包</td>
+	<tr>
+	<tr>
+		<td>隔離區</td><td>比對來自隔離區的任何封包</td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>比對來自廣域網路的任何封包</td>
+	<tr>
+	<tr>
+		<td>任何地址</td><td>比對來源為任何封包</td>
+	<tr>
+	<tr>
+		<td>群組@</td><td>選擇比對來源符合 系統/IP群組設定 分頁中規則的封包，例如：群組@號碼(名稱)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>選擇比對來源符合 系統/FQDN 分頁中規則的封包，例如：FQDN@編號(網域名稱)</td>
+	</tr>
+	<tr>
+		<td rowspan="20">目的地</td>
+	</tr>
+	<tr>
+		<td>IPv4 地址</td><td>比對目的地為單一IP的封包，例如：192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 地址範圍</td><td>比對目的地為一段IP地址的封包，用在某幾台主機，例如：192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>子網路/遮罩</td><td>比對目的地為某一個網段的封包，例如： 192.168.1.0/255.255.255.0</td>
+	<tr>
+	<tr>
+		<td>區域網路</td><td>比對目的地為區域網路的任何封包</td>
+	<tr>
+	<tr>
+		<td>隔離區</td><td>比對目的地為隔離區的任何封包</td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>比對目的地為廣域網路的任何封包</td>
+	<tr>
+	<tr>
+		<td>本機地址</td><td>比對目的地為這台XteraLink本身的封包</td>
+	<tr>
+	<tr>
+		<td>任何地址</td><td>比對目的地為任何封包</td>
+	<tr>
+	<tr>
+		<td>群組@</td><td>選擇比對目的地符合 系統/IP群組設定 分頁中規則的封包，例如：群組@號碼(名稱)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>選擇比對目的地符合 系統/FQDN 分頁中規則的封包，例如：FQDN@編號(網域名稱)</td>
+	</tr>
+	<tr>
+		<td rowspan="6">服務</td>
+	</tr>
+	<tr>
+		<td>任何服務</td><td>不過濾任何服務項目</td>
+	</tr>
+	<tr>
+		<td>協定</td><td>比對以協定號碼分類的服務封包，例如：協定@1 為 ICMP 封包</td>
+	</tr>
+	<tr>
+		<td>TCP@</td><td>比對以TCP通訊埠號碼分類的服務封包，例如：TCP@80 為 HTTP 封包</td>
+	</tr>
+	<tr>
+		<td>UDP@</td><td>比對以UDP通訊埠號碼分類的服務封包，例如：UDP@53 為 DNS 封包</td>
+	</tr>
+	<tr>
+		<td>群組@</td><td>選擇比對符合 系統/網路服務群組設定 分頁中規則的封包，例如：群組@號碼(名稱)</td>
+	</tr>	
+	<tr>
+		<td rowspan="3">處理</td>
+	</tr>
+	<tr>
+		<td>接受</td><td>表當符合此項規則時防火牆允許通過</td>
+	</tr>
+	<tr>
+		<td>拒絕</td><td>表當符合此項規則時防火牆會丟掉封包</td>
+	</tr>
+	<tr>
+		<td rowspan="3">紀錄</td>
+	</tr>
+	<tr>
+		<td>不打勾(Disable)</td><td>當此條規則有被引用到時不會加入 紀錄/記錄瀏覽/流量 分頁中</td>
+	</tr>
+	<tr>
+		<td>打勾(Enable)</td><td>當此條規則有被引用到時會加入 紀錄/記錄瀏覽/流量 分頁中</td>
+	</tr>
+</table>
+<p>
+系統初始防火強設定： XteraLink在出廠預設值時，會設定7條防火牆規則，使用者可以依照需求自行修改
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td>來源</td><td>目的地</td><td>服務</td><td>處理</td><td>紀錄</td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>本機地址</td><td>TCP@80</td><td>拒絕</td><td><img src="/image/unchecked.gif"></td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>本機地址</td><td>TCP@443</td><td>拒絕</td><td><img src="/image/unchecked.gif"></td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>本機地址</td><td>TCP@22</td><td>拒絕</td><td><img src="/image/unchecked.gif"></td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>本機地址</td><td>udp@161</td><td>拒絕</td><td><img src="/image/unchecked.gif"></td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>本機地址</td><td>udp@520</td><td>拒絕</td><td><img src="/image/unchecked.gif"></td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>任何地址</td><td>TCP@139</td><td>拒絕</td><td><img src="/image/unchecked.gif"></td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>任何地址</td><td>TCP@445</td><td>拒絕</td><td><img src="/image/unchecked.gif"></td>
+	<tr>	
+	<tr bgcolor=#A8A8A8>
+		<td>任何地址</td><td>任何地址</td><td>任何服務</td><td>接受</td><td><img src="/image/unchecked.gif"></td>
+	<tr>
+</table>
+<p>
+規則一:	阻止由廣域網路到XteraLink本機的TCP@80服務<br>
+規則二: 阻止由廣域網路到XteraLink本機的TCP@443服務<br>
+規則三: 阻止由廣域網路到XteraLink本機的TCP@22服務<br>
+規則四: 阻止由廣域網路到XteraLink本機的udp@161服務<br>
+規則五: 阻止由廣域網路到XteraLink本機的udp@520服務<br>
+規則六: 阻止由廣域網路到任何地址本機的TCP@139服務<br>
+規則七: 阻止由廣域網路到任何地址本機的TCP@445服務<br>
+預設規則: 使用者若不設定任何防火牆規則，則防火牆可以視為關閉的狀態
+</body>
+</html>

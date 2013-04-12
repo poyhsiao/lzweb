@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Service/DHCP (DMZ)</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>DHCP (隔离区)</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="6">IPv4 DHCP (隔离区) 设定</td>
+		<td colspan="2">在这个表格里可以设定网络时间服务器、网关器、网络掩码、DHCP 地址范围、固定配置</td>
+	</tr>
+	<tr> 
+		<td>域名称服务器</td>
+		<td>选择分派给隔离区主机使用的域名称服务器IP地址，例如：192.168.0.254</td>
+	</tr>
+	<tr> 
+		<td>网关器</td>
+		<td>选择分派给隔离区主机所使用的网关器，例如：192.168.0.1<br>注意：设定的网关器必须是 系统/网络设定/隔离区设定/IPv4 子网络设定/IP 地址/范围 内的设定的IP 地址</td>
+	</tr>
+	<tr> 
+		<td>网络掩码</td>
+		<td>选择分派给隔离区主机所加入的隔离区的网络掩码，例如：255.255.255.0<br>注意：设定的网络掩码必须包含在现有隔离区的网络掩码内</td>
+	</tr>
+	<tr> 
+		<td>DHCP 地址范围</td>
+		<td>填入分派给隔离区主机使用的动态地址IP范围，例如：<br>起始地址：192.168.0.10<br>结束地址：192.168.0.20<br>注意：设定的起始地址以及结束地址必须包含在现有隔离区的网络掩码内</td>
+	</tr>
+	<tr> 
+		<td>固定配置</td>
+		<td>填入分派给隔离区主机使用的固定IP地址以及对应MAC地址，例如：<br>MAC 地址：xx:xx:xx:xx:xx:xx <br> IP 地址：192.168.0.100<br>注意：设定的IP地址必须包含现有隔离区的网络掩码内</td>
+	</tr>	
+</table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>System/Diagnostic Tools</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+<h1>Diagnostic Tools</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="3">Diagnostic Tools</td>
+		<td colspan="2">This table allows you to use ARP Enforcement and IP Conflict Test tools.</td>
+	</tr>
+	<tr>
+		<td>ARP Enforcement</td>
+		<td>This tool is used to enforce the updates of ARP table on hosts or devices connected to XteraLink.<br>Click <b>Enforce</b>, and system will send out arp reply packets to update the ARP table of hosts or devices.
+			This is usually used when some devices at DMZ site fail to connect to Internet normally after installing XteraLink for the first time.</td>
+	</tr>
+	<tr>
+		<td>IP Conflict Test</td>
+		<td>This tool is used to detect whether any host's IP address is in conflict with any IP address defined in XteraLink's configuration pages. Possible cases of conflict might include:<br>1. An IP address at DMZ site is found duplicated with that defined in WAN.<br>2. An IP address at WAN site is found duplicated with that defined in DMZ.<br>3. An IP address at WAN, LAN or DMZ site is found duplicated with the hosting IP address of XteraLink.</td>
+	</tr>	
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="6">Ping & Trace Route</td>
+		<td colspan="2">This table allows you to use Ping or Trace Route tool on specified interface.</td>
+	</tr>
+	<tr>
+		<td>Target IP</td>
+		<td>Enter a target IP address or FQDN number.<br>Note: In order to use an FQDN number, a domain name must be specified on the page of: [System > DNS] first.</td>
+	</tr>
+	<tr>
+		<td>Interface</td>
+		<td>Select an interface: WAN, LAN or DMZ.</td>
+	</tr>
+	<tr>
+		<td>Ping</td>
+		<td>This shows a Ping result between selected interface and target IP.</td>
+	</tr>	
+	<tr>
+		<td>Trace Route</td>
+		<td>This shows a result of routes traced between selected interface and target IP.</td>
+	</tr>
+	<tr>
+		<td>Stop</td>
+		<td>This is used to stop Ping or Trace Route diagnosis. </td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Service/Connection Limit</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>连接限制</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="60">IPv4 规则设定 </td><td colspan="3">在这个表格里可以针对每条规则设定来源、目的地、服务、联机/秒、日志</td>
+	</tr>
+	<tr>
+		<td rowspan="18">来源</td>
+	</tr>
+	<tr>
+		<td>IPv4 地址</td><td>比对来自单一IP的封包，例如：192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 地址范围</td><td>比对来自一段IP地址的封包，用在某几台主机，例如：192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>子网络/屏蔽</td><td>比对来自某一个网段的封包，例如： 192.168.1.0/255.255.255.0</td>
+	<tr>
+	<tr>
+		<td>局域网络</td><td>比对来自局域网络的任何封包</td>
+	<tr>
+	<tr>
+		<td>隔离区</td><td>比对来自隔离区的任何封包</td>
+	<tr>
+	<tr>
+		<td>广域网络</td><td>比对来自广域网络的任何封包</td>
+	<tr>
+	<tr>
+		<td>任何地址</td><td>比对来源为任何封包</td>
+	<tr>
+	<tr>
+		<td>群组@</td><td>选择比对来源符合 系统/IP群组设定 分页中规则的封包，例如：群组@号码(名称)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>选择比对来源符合 系统/FQDN 分页中规则的封包，例如：FQDN@编号(域名称)</td>
+	</tr>
+	<tr>
+		<td rowspan="20">目的地</td>
+	</tr>
+	<tr>
+		<td>IPv4 地址</td><td>比对目的地为单一IP的封包，例如：192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 地址范围</td><td>比对目的地为一段IP地址的封包，用在某几台主机，例如：192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>子网络/屏蔽</td><td>比对目的地为某一个网段的封包，例如： 192.168.1.0/255.255.255.0</td>
+	<tr>
+	<tr>
+		<td>局域网络</td><td>比对目的地为局域网络的任何封包</td>
+	<tr>
+	<tr>
+		<td>隔离区</td><td>比对目的地为隔离区的任何封包</td>
+	<tr>
+	<tr>
+		<td>广域网络</td><td>比对目的地为广域网络的任何封包</td>
+	<tr>
+	<tr>
+		<td>本机地址</td><td>比对目的地为这台XteraLink本身的封包</td>
+	<tr>
+	<tr>
+		<td>任何地址</td><td>比对目的地为任何封包</td>
+	<tr>
+	<tr>
+		<td>群组@</td><td>选择比对目的地符合 系统/IP群组设定 分页中规则的封包，例如：群组@号码(名称)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>选择比对目的地符合 系统/FQDN 分页中规则的封包，例如：FQDN@编号(域名称)</td>
+	</tr>
+	<tr>
+		<td rowspan="6">服务</td>
+	</tr>
+	<tr>
+		<td>任何服务</td><td>不过滤任何服务项目</td>
+	</tr>
+	<tr>
+		<td>协议</td><td>比对以协议号码分类的服务封包，例如：协定@1 为 ICMP 封包</td>
+	</tr>
+	<tr>
+		<td>TCP@</td><td>比对以TCP通讯端口号码分类的服务封包，例如：TCP@80 为 HTTP 封包</td>
+	</tr>
+	<tr>
+		<td>UDP@</td><td>比对以UDP通讯端口号码分类的服务封包，例如：UDP@53 为 DNS 封包</td>
+	</tr>
+	<tr>
+		<td>群组@</td><td>选择比对符合 系统/网络服务群组设定 分页中规则的封包，例如：群组@号码(名称)</td>
+	</tr>
+	<tr>
+		<td>联机/秒</td><td colspan="2">设定每秒可通过XteraLink的联机数<br>每秒超过此联机数的联机，将会被Xteralink丢弃</td>
+	</tr>
+	<tr>
+		<td rowspan="3">日志</td>
+	</tr>
+	<tr>
+		<td>不打勾(Disable)</td><td>当符合此规则的联机数大于 联机/秒 的设定时不会显示在 日志/记录浏览/流量 分页中</td>
+	</tr>
+	<tr>
+		<td>打勾(Enable)</td><td>当符合此规则的联机数大于 联机/秒 的设定时 XteraLink会每5分钟日志超过此设定的联机数在 日志/记录浏览/流量 分页中</td>
+	</tr>	
+</table>
+</body>
+</html>

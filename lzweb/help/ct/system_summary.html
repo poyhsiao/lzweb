@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>System/Summary</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+<h1>系統資訊</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="6">系統狀態</td>
+		<td colspan="2">在這個表格裡我們可以察看系統的基本資訊，例如：目前版本、序號、開機時間、目前連線總數、CPU 使用量 </td>
+	</tr>
+	<tr> 
+		<td>目前版本</td><td>本台<span>XteraLink</span>的版本</td>
+	</tr>
+	<tr> 
+		<td height="16">序號</td><td height="16">本台<span>XteraLink</span>的序號</td>
+	</tr>
+	<tr> 
+		<td>開機時間</td><td>從開機到現在的時間</td>
+	</tr>
+	<tr>
+		<td>目前連線總數</td><td>目前總共的使用中連線數</td>
+	</tr>
+	<tr> 
+		<td>CPU使用量</td><td>CPU目前的負載比率</td>
+	</tr>
+</table>	
+<p>
+<table width="100%" border="1" cellspacing="0">	
+	<tr> 
+		<td rowspan="11">網路介面資訊</td>
+		<td colspan="2">在這個表格裡我們可以察看系統所有的網路介面以及對應的狀態，例如：介面、IPv4 地址、狀態、接收(Kbps)、傳送 (Kbps)、偵測、重新連接、連線、時間名稱</td>
+	</tr>
+	<tr> 
+		<td>介面</td><td>XteraLink目前的網路介面，例如：廣域網路、區域網路、隔離區</td>
+	</tr>
+	<tr> 
+		<td>動態網域名稱</td><td>該網路介面由動態網域名稱伺服器取得的網域名稱，例如：xxx.com</td>
+	</tr>
+	<tr> 
+		<td>IPv4 地址</td><td>該網路介面設定的第一個IPv4 地址，例如：192.168.1.1<br>Unknown：網路介面無設定</td>
+	</tr>
+	<tr> 
+		<td>狀態</td><td>網卡的狀態，例如：<br>Down：網卡未接線<br>10/Half、10/Full、100/Half、100/Full：網卡目前連線速率<br>Unknown：未知的網卡<br>WCDMA、HSPA：USB 3G網卡目前連線模式</td>
+	</tr>
+	<tr> 
+		<td>接收 (Kbps)</td><td>一秒鐘內該網卡接收統計數據的流量、單位(Kbps)</td>
+	</tr>
+	<tr> 
+		<td>傳送 (Kbps)</td><td>一秒鐘內該網卡傳送統計數據的流量、單位(Kbps)</td>
+	</tr>
+	<tr> 
+		<td>偵測</td><td>廣域網路偵測結果，例如：<br><img src="/image/state-alive.gif">：偵測正常<br><img src="/image/state-dead.gif">：偵測失敗<br> N/A：不支援 (僅支援廣域網路)</td>
+	</tr>
+	<tr> 
+		<td>重新連接</td><td>動態廣域網路重新連線<br>N/A：不支援(僅支援PPPOE、DHCP廣域網路)</td>
+	</tr>
+	<tr> 
+		<td>連線時間</td><td>動態廣域網路連線時間<br>N/A：不支援(僅支援PPPOE、DHCP廣域網路)</td>
+	</tr>
+	<tr> 
+		<td>名稱</td><td>使用者設定的廣域網路名稱<br>N/A：不支援(僅支援廣域網路)</td>
+	</tr>
+</table>  
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>System/Diagnostic Tools</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+<h1>网络诊断工具</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="3">网络诊断工具</td>
+		<td colspan="2">在这个表格里我们可以使用ARP 重整、IP 冲突测试工具</td>
+	</tr>
+	<tr>
+		<td>ARP 重整</td>
+		<td>ARP重整强迫XteraLink周遭的主机或设备更新ARP table<br>点选[重整]，系统会送出arp reply封包以更新周遭的主机或设备的ARP table，通常用在当部分DMZ的设备在第一次安装XteraLink后不能正确的与 internet 联机时才须使用</td>
+	</tr>
+	<tr>
+		<td>IP 冲突测试</td>
+		<td>IP 冲突测试寻找目前网络上是否有主机的位置与XteraLink的网络设定分页中的设定有相违背的状况，系统会侦测到以下的冲突状况发生:<br>1.在隔离区(DMZ)中发现有与设定在广域网络端(WAN)相同的IP地址<br>2.在广域网络端(WAN)中发现有与设定在隔离区(DMZ)相同的IP地址<br>3.在广域网络端(WAN)、局域网络(LAN)或隔离区(DMZ)中发现有与设定给XteraLink本机相同的IP地址</td>
+	</tr>	
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="6">Ping 与 路由跟踪</td>
+		<td colspan="2">在这个表格里我们可以在指定的接口上使用Ping或路由跟踪工具</td>
+	</tr>
+	<tr>
+		<td>目标 IP</td>
+		<td>输入目标IP或FQDN<br>注：若使用FQDN时，须web UI上的[系统]->[域名称服务器]->[域名称服务器]中先行指定域名称服务器</td>
+	</tr>
+	<tr>
+		<td>界面</td>
+		<td>选择使用的接口，例如：广域网络、局域网络、隔离区</td>
+	</tr>
+	<tr>
+		<td>Ping</td>
+		<td>显示Ping从指定接口到目标 IP的结果</td>
+	</tr>	
+	<tr>
+		<td>跟踪</td>
+		<td>显示封包从指定接口到目标 IP中间经过的路由</td>
+	</tr>
+	<tr>
+		<td>停止</td>
+		<td>用来中断Ping或路由跟踪程序</td>
+	</tr>
+</table>
+</body>
+</html>

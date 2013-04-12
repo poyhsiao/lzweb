@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Service/Auto Routing</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>自動路由</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="10">自動路由設定</td><td colspan="3">在這個表格裡可以設定規則包含方法、參數、持續時間</td>
+	</tr>
+	<tr>
+		<td>方法</td><td>選擇自動路由的方法依照比重或流量，例如：<br>比重：由使用者設定的參數決定自動路由機制<br>流量：XteraLink針對目前的流量，自動將新的連線建立在流量比較低的廣域網路上</td>
+	</tr>
+	<tr>
+		<td>參數</td><td>若選擇自動路由方法為比重，請依序填入各廣域網路的相對比重，例如：<br>廣域網路1:廣域網路2:廣域網路3<br>1:1:1</td>
+	</tr>
+	<tr>
+		<td>持續時間</td><td>設定持續路由的持續時間</td>
+	</tr>	
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="60">IPv4 規則設定</td><td colspan="3">在這個表格裡可以針對每條規則設定來源、目的地、服務、備援、持續、紀錄</td>
+	</tr>
+	<tr>
+		<td rowspan="18">來源</td>
+	</tr>
+	<tr>
+		<td>IPv4 地址</td><td>比對來自單一IP的封包，例如：192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 地址範圍</td><td>比對來自一段IP地址的封包，用在某幾台主機，例如：192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>子網路/遮罩</td><td>比對來自某一個網段的封包，例如： 192.168.1.0/255.255.255.0</td>
+	<tr>
+	<tr>
+		<td>區域網路</td><td>比對來自區域網路的任何封包</td>
+	<tr>
+	<tr>
+		<td>隔離區</td><td>比對來自隔離區的任何封包</td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>比對來自廣域網路的任何封包</td>
+	<tr>
+	<tr>
+		<td>任何地址</td><td>比對來源為任何封包</td>
+	<tr>
+	<tr>
+		<td>群組@</td><td>選擇比對來源符合 系統/IP群組設定 分頁中規則的封包，例如：群組@號碼(名稱)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>選擇比對來源符合 系統/FQDN 分頁中規則的封包，例如：FQDN@編號(網域名稱)</td>
+	</tr>
+	<tr>
+		<td rowspan="20">目的地</td>
+	</tr>
+	<tr>
+		<td>IPv4 地址</td><td>比對目的地為單一IP的封包，例如：192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 地址範圍</td><td>比對目的地為一段IP地址的封包，用在某幾台主機，例如：192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>子網路/遮罩</td><td>比對目的地為某一個網段的封包，例如： 192.168.1.0/255.255.255.0</td>
+	<tr>
+	<tr>
+		<td>區域網路</td><td>比對目的地為區域網路的任何封包</td>
+	<tr>
+	<tr>
+		<td>隔離區</td><td>比對目的地為隔離區的任何封包</td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>比對目的地為廣域網路的任何封包</td>
+	<tr>
+	<tr>
+		<td>本機地址</td><td>比對目的地為這台XteraLink本身的封包</td>
+	<tr>
+	<tr>
+		<td>任何地址</td><td>比對目的地為任何封包</td>
+	<tr>
+	<tr>
+		<td>群組@</td><td>選擇比對目的地符合 系統/IP群組設定 分頁中規則的封包，例如：群組@號碼(名稱)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>選擇比對目的地符合 系統/FQDN 分頁中規則的封包，例如：FQDN@編號(網域名稱)</td>
+	</tr>
+	<tr>
+		<td rowspan="6">服務</td>
+	</tr>
+	<tr>
+		<td>任何服務</td><td>不過濾任何服務項目</td>
+	</tr>
+	<tr>
+		<td>協定</td><td>比對以協定號碼分類的服務封包，例如：協定@1 為 ICMP 封包</td>
+	</tr>
+	<tr>
+		<td>TCP@</td><td>比對以TCP通訊埠號碼分類的服務封包，例如：TCP@80 為 HTTP 封包</td>
+	</tr>
+	<tr>
+		<td>UDP@</td><td>比對以UDP通訊埠號碼分類的服務封包，例如：UDP@53 為 DNS 封包</td>
+	</tr>
+	<tr>
+		<td>群組@</td><td>選擇比對符合 系統/網路服務群組設定 分頁中規則的封包，例如：群組@號碼(名稱)</td>
+	</tr>
+	<tr>
+		<td rowspan="2">廣域網路</td>
+	</tr>
+	<tr>
+		<td>打勾</td><td>選擇自動路由的廣域網路：<br>單選：符合此IPv4 規則的連線，固定路由至所選擇的單一廣域網路<br>複選：符合此IPv4 規則的連線，依照自動路由所選擇的方法，選擇其中之一的廣域網路作自動路由</td>
+	</tr>	
+	<tr>
+		<td rowspan="3">備援</td>
+	</tr>
+	<tr>
+		<td>打勾(Enable)</td><td>開啟備援，若符合此IPv4 規則，但所選擇的廣域網路皆失敗，則繼續比對下一個IPv4 規則</td>
+	</tr>
+	<tr>
+		<td>不打勾(Disable)</td><td>不開啟備援，若符合此IPv4 規則，但所選擇的廣域網路皆失敗，不會繼續比對下一個IPv4 規則</td>
+	</tr>
+	<tr>
+		<td rowspan="3">持續</td>
+	</tr>
+	<tr>
+		<td>打勾(Enable)</td><td>當符合此項規則時，依照自動路由所設定的持續時間針對所選出的廣域網路，開啟持續路由</td>
+	</tr>
+	<tr>
+		<td>不打勾(Disable)</td><td>當符合此項規則時不開啟持續路由</td>
+	</tr>
+	<tr>
+		<td rowspan="3">紀錄</td>
+	</tr>
+	<tr>
+		<td>不打勾(Disable)</td><td>當此條規則有被引用到時不會加入 紀錄/記錄瀏覽/流量 分頁中</td>
+	</tr>
+	<tr>
+		<td>打勾(Enable)</td><td>當此條規則有被引用到時會加入 紀錄/記錄瀏覽/流量 分頁中</td>
+	</tr>
+</table>	
+</body>
+</html>

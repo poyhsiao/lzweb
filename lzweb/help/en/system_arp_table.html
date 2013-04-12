@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>System/ARP Table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+<h1>ARP Table</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="8">Fixed Entries Setting</td>
+		<td colspan="2">This table allows you to add or modify the records in system's ARP table.</td>
+	</tr>
+	<tr>
+		<td>Interface	</td>
+		<td>Select an interface to add to the entry. e.g. LAN, WAN, DMZ, etc.</td>
+	<tr>
+	<tr>
+		<td>IP Address</td>
+		<td>Enter an IP address. e.g. x.x.x.x</td>
+	<tr>
+	<tr>
+		<td>MAC Address</td>
+		<td>Enter a corresponding MAC address. e.g. xx:xx:xx:xx:xx:xx</td>
+	<tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="8">Dynamic Entries Setting</td>
+		<td colspan="2">This table displays the records of all ARP tables in system.</td>
+	</tr>
+	<tr>
+		<td>Interface</td>
+		<td>The interfaces recorded in current system's ARP table.</td>
+	<tr>
+	<tr>
+		<td>IP Address</td>
+		<td>The IP addresses recorded in current system's ARP table.</td> 
+	<tr>
+	<tr>
+		<td>MAC Address</td>
+		<td>The MAC addresses recorded in current system's ARP table.</td>
+	<tr>
+	<tr>
+		<td>Fix</td>
+		<td>This option is unchecked (disabled) by default. <br>When checked (enabled) and after configuration applied, this entry will be added to Fixed Entries Setting.</td>
+	<tr>
+</table>
+</body>
+</html>

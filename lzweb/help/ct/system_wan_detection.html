@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>System/WAN Detection</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+<h1>廣域網路偵測</h1>
+<p>
+在這個頁面可以針對各廣域網路連線的偵測方式做設定，XteraLink本身使用ICMP和TCP封包對網路的連線狀態做偵測，依照回傳的狀況決定此廣域網路連線是否正常。
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td>當有對內流量,總是成功</td>
+		<td>當不啟用(Disable)此設定時，XteraLink就不會利用對內的廣域網路流量來判斷線路連線狀況<br>當啟用(Enable)此設定時，只要XteraLink有偵測到 對內的廣域網路流量，就判定此路廣域網路連線是屬於正常連線狀態，而不再進行icmp和tcp封包的偵測行為</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">	
+	<tr>
+		<td>廣域網路</td>
+		<td>選擇欲設定的廣域網路連線</td>
+	<tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">		
+	<tr>
+		<td>協定</td>
+		<td>可選擇要進行廣域網路連線狀態偵測的方式，可分成ICMP和TCP兩種</td>
+	<tr>
+	<tr>
+		<td>偵測週期</td>
+		<td>表示每次偵測的時間間隔，以秒表示，間隔短表示可以更快發現目前的連線狀況，不過也會消耗比較多的頻寬</td>
+	<tr>
+	<tr>
+		<td>每次偵測所選出之目標數量</td>
+		<td>在每次偵測的時候，隨機從目標清單選出不同的IP地址的數量做偵測，不可高於目標清單的數量</td>
+	<tr>
+	<tr>
+		<td>重試次數</td>
+		<td>發生錯誤時的重測次數，重覆上述的測試多次，如果所有的測試都失敗，XteraLink則宣告此廣域網路連線無法運作</td>
+	<tr>	
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">	
+	<tr> 
+		<td rowspan="6">目標清單</td>
+		<td colspan="2">協定為ICMP封包狀態下</td>
+	</tr>
+	<tr>
+		<td>目標 IP 地址</td><td>利用Ping來進行網路偵測的主機地址</td>
+	</tr>
+	<tr>
+		<td>躍點</td><td>這個ping的存活時間 (time to live) 是由參數「躍點」 (Hops)所定義，一般設定為3</td>
+	</tr>
+	<tr>
+		<td colspan="2">協定為TCP封包狀態下</td>
+	</tr>
+		<tr>
+		<td>目標 IP 地址</td><td>利用TCP connect來進行網路偵測的主機地址</td>
+	</tr>
+	<tr>
+		<td>TCP 端口</td><td>指定「通訊埠」 (Port)的數值</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<html>
+<head>
+<title>System/Setting</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>广域网络设定</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td>广域网络</td><td>下拉选单选择欲设定的广域网络号码</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="4">以太网络</td><td colspan="2">在这个表格里可以设定此广域网络对应网卡的Clone MAC、MTU、传输模式</td>
+	</tr>
+	<tr>
+		<td>Clone MAC</td><td>XteraLink 可让您设定这种广域网络网卡的 MAC 地址</td>
+	</tr>
+	<tr>
+		<td>MTU</td><td>管理员可以在此处设定每个数据包的大小，若一段数据过大将被分为多个包传送</td>
+	</tr>
+	<tr>
+		<td>传输模式</td><td>选择此广域网络接口上的传输模式</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="20">基本设定</td><td colspan="5">在这个表格里可以设定启用、名称、联机模式、下载带宽、上传带宽</td>
+	</tr>
+	<tr>
+		<td>启用</td><td colspan="4">当不启用(Disable)此设定时，此广域网络无法使用<br>当启用(Enable)此设定时，此广域网络会依照使用者按下套用设定时的设定启用</td>
+	</tr>
+	<tr>
+		<td>名称</td><td colspan="4">使用者自行设定的广域网络命名</td>
+	</tr>
+	<tr>
+		<td rowspan="14">联机模式</td><td colspan="4">在这个下拉选单里可以设定三种广域网络联机模式，包含固定、PPPoE、DHCP动态配址</td>
+	</tr>
+	<tr>
+		<td rowspan="5">固定</td><td colspan="3">联机模式选择固定，会出现IPv4 静态模式表格</td>
+	</tr>
+	<tr>
+		<td rowspan="4">IPv4 静态模式表格</td><td colspan="2">在这个表格里可以填入网关器、网络掩码、IP 地址/范围</td>
+	</tr>
+	<tr>
+		<td>网关器</td>	<td>为ISP端的IP地址，即预设网关器地址，例如：211.21.40.254</td>
+	</tr>
+	<tr>
+		<td>网络掩码</td><td>ISP配发的网络屏蔽，例如：255.255.255.0</td>
+	</tr>
+	<tr>
+		<td>IP 地址/范围</td><td>ISP配发的IP地址或范围<br>地址，例如：211.21.40.32<br>范围，例如：211.21.40.32-211.21.40.42</td>
+	</tr>
+	<tr>
+		<td rowspan="7">PPPoE</td><td colspan="3">联机模式选择PPPoe，会出现PPPoE 模式表格</td>
+	</tr>
+	<tr>
+		<td rowspan="6">PPPoE 模式</td><td colspan="2">在这个表格里可以填使用者名称、密码、服务名称、IPv4 地址、每日重拨时间</td>
+	</tr>
+	<tr>
+		<td>使用者名称</td><td>设定拨接上ISP时所需要的使用者名称</td>
+	</tr>
+	<tr>
+		<td>密码</td><td>设定拨接上ISP时所需要的密码</td>
+	</tr>
+	<tr>
+		<td>服务名称</td><td>设定拨号时ISP所需要的服务名称</td>
+	</tr>
+	<tr>
+		<td>IPv4 地址</td><td>填入向ISP申请的IP地址</td>
+	</tr>
+	<tr>
+		<td>每日重拨时间</td><td>某些ISP在固定时间段后会自动切断PPPoE联机，因此当XteraLink侦测到线路断线后会同时替每条断线的PPPoE线路重拨<br>为避免同时间多条线路回放的情况，可在此针对不同WAN线路设定不同重拨时间，将这些PPPoE线路重拨时间错开<br>设定HH:MM回放时间后，系统会每天固定在此时间点为该PPPoE线路进行回放</td>
+	</tr>
+	<tr>
+		<td>DHCP动态配址</td><td colspan="3">使用DHCP自动联机</td>
+	</tr>	
+	<tr>
+		<td>下行流量</td><td colspan="4">此线路提供的下载速率，例如512 (Kbps)</td>
+	</tr>
+	<tr>
+		<td>上行流量</td><td colspan="4">此线路提供的上传速率，例如512 (Kbps)</td>
+	</tr>	
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="6">USB 调制解调器 状态</td><td colspan="2">在这个表格里可以察看状态、品牌/型号、电信公司、联机模式、讯号质量</td>
+	</tr>
+	<tr>
+		<td>状态</td><td>显示此USB调制解调器的状态，例如：<br> Unknown: 不支持的USB设备或USB设备未接上<br>Plug：USB调制解调器已接上<br>PIN Error：PIN输入错误<br> Dial-in Failed：拨号失败<br> Dial-in OK：拨号成功</td>
+	</tr>
+	<tr>
+		<td>品牌/型号</td><td>显示此USB调制解调器的品牌/型号，例如：huawei/E177</td>
+	</tr>
+	<tr>
+		<td>电信公司</td><td>显示此USB调制解调器目前的电信公司，例如：Chunghwa Telecom</td>
+	</tr>
+	<tr>
+		<td>联机模式</td><td>显示此USB调制解调器目前的联机模式，例如：<br>WCDMA  (Wide band Code Division Multiple Access)<br>HSPA  (High Speed Packet Access)</td>
+	</tr>
+	<tr>
+		<td>讯号质量</td><td>以图形显示此USB调制解调器目前的讯号质量，例如：<br><img src="/image/signal-0.gif"> 无讯号<br><img src="/image/signal-1.gif"> 讯号微弱<br><img src="/image/signal-2.gif"> 讯号中等<br><img src="/image/signal-3.gif"> 讯号强<br><img src="/image/signal-4.gif"> 讯号最强</td>
+	</tr>
+</table>	
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="7">3G/3.5G 拨号 设定</td><td colspan="2">在这个表格里可以设定PIN、拨接号码、APN、使用者名称、密码、MTU</td>
+	</tr>
+	<tr>
+		<td>PIN</td><td>输入SIM卡的PIN(Personal identification number)，例如：0000</td>
+	</tr>
+	<tr>
+		<td>APN</td><td>输入拨号使用的APN(Access Point Name)，例如：internet</td>
+	</tr>
+	<tr>
+		<td>拨接号码</td><td>输入拨号使用的拨接号码，例如：*99#</td>
+	</tr>
+	<tr>
+		<td>使用者名称</td><td>输入拨号使用的使用者名称，例如：xxxx</td>
+	</tr>
+	<tr>
+		<td>密码</td><td>输入拨号使用的密码，例如：xxxx</td>
+	</tr>
+	<tr>
+		<td>MTU</td><td>输入拨号完成后设备的MTU(Maximum transmission unit)，例如：1500</td>
+	</tr>
+</table>	
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="2">IPv4 公开 IP 穿透</td><td colspan="2">在这个表格里可以增加此广域网络子网络中的IP地址或范围，在隔离区后的主机可以设定其IP地址做网络透通</td>
+	</tr>
+	<tr>
+		<td>IP 地址/范围</td><td>隔离区后的主机的IP地址或范围<br>地址，例如：211.21.40.33<br>范围，例如：211.21.40.43-211.21.40.53</td>
+	</tr>
+</table>
+<p>
+<h1>隔离区设定</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="4">以太网络</td><td colspan="2">在这个表格里可以设定此隔离区对应网卡的Clone MAC、MTU、传输模式</td>
+	</tr>
+	<tr>
+		<td>Clone MAC</td><td>XteraLink 可让您设定隔离区网卡的 MAC 地址</td>
+	</tr>
+	<tr>
+		<td>MTU</td><td>管理员可以在此处设定每个数据包的大小，若一段数据过大将被分为多个包传送</td>
+	</tr>
+	<tr>
+		<td>传输模式</td><td>选择此隔离区接口上的传输模式</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="4">IPv4 子网络设定</td><td colspan="2">在这个表格里可以填入IP 地址/范围、网络掩码</td>
+	</tr>
+	<tr>
+		<td>IP 地址/范围</td><td>设定XteraLink本身位于隔离区接口的IP地址或范围，其用途为当成位于隔离区中客户的预设网关器地址<br>IP 地址，例如：192.168.10.1 <br>范围，例如：192.168.10.1-192.168.10.10</td>
+	</tr>
+	<tr>
+		<td>网络掩码</td><td>设定XteraLink本身位于隔离区接口的网络掩码，例如：255.255.255.0</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="4">IPv4 静态路由子网络</td><td colspan="2">在这个表格里可以填入子网络/网络屏蔽、网关器</td>
+	</tr>
+	<tr>
+		<td>子网络/网络屏蔽</td><td>为隔离区中某一段私有网段</td>
+	</tr>
+	<tr>
+		<td>网关器</td><td>为此私有网段需做静态路由之网关器地址</td>
+	</tr>
+</table>
+<p>
+<h1>局域网络设定</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="4">以太网络</td><td colspan="2">在这个表格里可以设定此局域网络对应网卡的Clone MAC、MTU、传输模式</td>
+	</tr>
+	<tr>
+		<td>Clone MAC</td><td>XteraLink 可让您设定局域网络网卡的 MAC 地址</td>
+	</tr>
+	<tr>
+		<td>MTU</td><td>管理员可以在此处设定每个数据包的大小，若一段数据过大将被分为多个包传送</td>
+	</tr>
+	<tr>
+		<td>传输模式</td><td>选择此局域网络接口上的传输模式</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="4">IPv4 子网络设定</td><td colspan="2">在这个表格里可以填入IP 地址/范围、网络掩码</td>
+	</tr>
+	<tr>
+		<td>IP 地址/范围</td><td>设定XteraLink本身位于局域网络接口的IP地址或范围，其用途为当成位于局域网络中客户的预设网关器地址<br>IP 地址，例如：192.168.0.1 <br>范围，例如：192.168.0.1-192.168.0.10</td>
+	</tr>
+	<tr>
+		<td>网络掩码</td><td>设定XteraLink本身位于局域网络接口的网络屏蔽，例如：255.255.255.0</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="4">IPv4 静态路由子网络</td><td colspan="2">在这个表格里可以填入子网络/网络屏蔽、网关器</td>
+	</tr>
+	<tr>
+		<td>子网络/网络屏蔽</td><td>为局域网络中某一段私有网段</td>
+	</tr>
+	<tr>
+		<td>网关器</td><td>为此私有网段需做静态路由之网关器地址</td>
+	</tr>
+</table>
+</body>
+</html>

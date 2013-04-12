@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Service/NAT</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>NAT</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td>WAN</td><td>Select a WAN link for configuration.</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td>Enable</td><td>When unchecked (Disabled), all packets that pass through this WAN link to the subnet will not be translated.<br>
+						When checked (Enabled), all packets that pass through this WAN link to the subnet will be translated, while an IPv4 Rules setting table will appear for configuration.
+					 </td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="60">IPv4 Rules </td><td colspan="3">This table allows you to configure the Source, Destination, Service, Translate and Log for each rule.</td>
+	</tr>
+	<tr>
+		<td rowspan="8">Source</td>
+	</tr>
+	<tr>
+		<td>IPv4 Address</td><td>Packets from a specified IP address will be matched. e.g. 192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 Range </td><td>Packets from certain hosts within a specified IP range will be matched. e.g. 192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>group@</td><td>Packets from a specified group (defined in [System/IP Group]) will be matched. e.g. group@number(name)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>Packets from a specified FQDN number (defined in [System/FQDN]) will be matched. e.g. FQDN@number(domain name)</td>
+	</tr>
+	<tr>
+		<td rowspan="8">Destination</td>
+	</tr>
+	<tr>
+		<td>IPv4 Address</td><td>Packets to a specified IP address will be matched. e.g. 192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 Range</td><td>Packets to certain hosts within a specified IP range will be matched. e.g. 192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>group@</td><td>Packets to a specified group (defined in [System/IP Group]) will be matched. e.g. group@number(name)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>Packets to a specified FQDN number (defined in [System/FQDN]) will be matched. e.g. FQDN@number(domain name)</td>
+	</tr>
+	<tr>
+		<td rowspan="6">Service</td>
+	</tr>
+	<tr>
+		<td>Any</td><td>No service will be matched.</td>
+	</tr>
+	<tr>
+		<td>proto@</td><td>Packets of services categorized by protocol number will be matched. e.g. proto@1 indicates ICMP packets.</td>
+	</tr>
+	<tr>
+		<td>TCP@</td><td>Packets of services categorized by TCP port will be matched. e.g. TCP@80 indicates HTTP packets.</td>
+	</tr>
+	<tr>
+		<td>UDP@</td><td>Packets of services categorized by UDP port will be matched. e.g. UDP@53 indicates DNS packets.</td>
+	</tr>
+	<tr>
+		<td>group@</td><td>Packets of service group defined in [System/Service Group] will be matched. e.g. group@number(name)</td>
+	</tr>
+	<tr>
+		<td>Translate</td><td colspan="2">An IPv4 address that's translated on this WAN link.</td>
+	</tr>
+	<tr>
+		<td rowspan="3">Log</td>
+	</tr>
+	<tr>
+		<td>Unchecked (Disabled)</td><td>Connections matching this rule that are used will not be logged in the page of [Log/View/Traffic].</td>
+	</tr>
+	<tr>
+		<td>Checked (Enabled)</td><td>Connections matching this rule that are used will be shown in the page of [Log/View/Traffic].</td>
+	</tr>	
+<table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>System/Service Group</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+<h1>Service Group</h1>
+<p>
+TCP/UDP ports or protocol numbers can be defined as a group. Ports defined for specific network application or server can be applied to configurations in many Service pages (e.g. Virtual Server/Firewall/Connection Limit/Auto Routing/NAT).<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td>Group</td><td>Select a group number to be configured. XteraLink supports up to 32 IP groups.</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="3">Service Group Rule</td>
+		<td colspan="2">This table allows you to set up a group rule for the selected service group.</td>
+	</tr>
+	<tr>
+		<td>Label</td>
+		<td>This is the name of the service group. This service group name will appear as a service option in the drop-down menu in many Service configuration pages.</td>
+	</tr>
+	<tr>
+		<td>Service</td>
+		<td>Enter an IPv4 address here to be included in the group. e.g. <br>A single protocol: proto@XX<br>A single port: TCP@XXX, UDP@XXX <br>a port range: TCP@XXX-YYY, UDP@XXX-YYY</td>
+	</tr>
+</table>
+</body>
+</html>

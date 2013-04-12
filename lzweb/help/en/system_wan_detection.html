@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>System/WAN Detection</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+<h1>WAN Detection</h1>
+<p>
+This page allows you to configure detection settings for each WAN link. XteraLink uses both ICMP and TCP to detect WAN link, and determines each WAN link's health based on received packets.
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td>Always Success When There Is Inbound Traffic</td>
+		<td>When this option is disabled (unchecked), XteraLink will not determine the status of WAN connection based on inbound traffic.<br>When enabled (checked), XteraLink will determine this WAN link as active as long as inbound traffic is detected, without further detecting ICMP and TCP packets.</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">	
+	<tr>
+		<td>WAN</td>
+		<td>Select a WAN link to be configured.</td>
+	<tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">		
+	<tr>
+		<td>Protocol</td>
+		<td>Select a WAN link detection method: ICMP or TCP.</td>
+	<tr>
+	<tr>
+		<td>Detection Period</td>
+		<td>This indicates the detection interval in seconds. A shorter interval means faster detection, but takes bigger bandwidth.</td>
+	<tr>
+	<tr>
+		<td>Number of Targets per Detection</td>
+		<td>For each detection, system will randomly sort out a number of IP addresses from the target list for detection. The number of selected IP addresses shall not exceed the total number in target list.</td>
+	<tr>
+	<tr>
+		<td>Number of Retries</td>
+		<td>This indicates the number of detection retries when error occurs. If all retries fail, XteraLink will determine the WAN link unavailable.</td>
+	<tr>	
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">	
+	<tr> 
+		<td rowspan="6">Target List</td>
+		<td colspan="2">When ICMP protocol is used</td>
+	</tr>
+	<tr>
+		<td>Destination IP</td><td>The IP address of the host where "ping" is used for detection.</td>
+	</tr>
+	<tr>
+		<td>Hops</td><td>The time to live of "ping" command is defined by the parameter <b>Hops</b> which is usually 3. </td>
+	</tr>
+	<tr>
+		<td colspan="2">When TCP protocol is used</td>
+	</tr>
+		<tr>
+		<td>Destination IP</td><td>The IP address of the host where "TCP connect" is used for detection</td>
+	</tr>
+	<tr>
+		<td>TCP Port</td><td>The assigned port number </td>
+	</tr>
+</table>
+</body>
+</html>

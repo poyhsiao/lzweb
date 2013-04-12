@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Service/Connection Limit</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>Connection Limit</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="60">IPv4 Rule </td><td colspan="3">This table allows you to configure the Source, Destination, Service, Connection/Sec and Log for each IPv4 rule.</td>
+	</tr>
+	<tr>
+		<td rowspan="18">Source</td>
+	</tr>
+	<tr>
+		<td>IPv4 Address</td><td>Enter an IP address where connections are established from. e.g. 192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 Range</td><td>Enter an IP range of hosts where connections are established from. e.g. 192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>Subnet/mask</td><td>Enter a subnet address where connections are established from. e.g. 192.168.1.0/255.255.255.0</td>
+	<tr>
+	<tr>
+		<td>LAN</td><td>Select LAN as the source where connections are established from.</td>
+	<tr>
+	<tr>
+		<td>DMZ</td><td>Select DMZ as the source where connections are established from.</td>
+	<tr>
+	<tr>
+		<td>WAN</td><td>Select WAN as the source where connections are established from.</td>
+	<tr>
+	<tr>
+		<td>Any</td><td>Select any source where connections are established from.</td>
+	<tr>
+	<tr>
+		<td>group@</td><td>Select a group defined in [System/IP Group] as the source where connections are established from. e.g. group@number(name)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>Select an FQDN number defined in [System/FQDN] as the source where connections are established from. e.g. FQDN@number(domain name)</td>
+	</tr>
+	<tr>
+		<td rowspan="20">Destination</td>
+	</tr>
+	<tr>
+		<td>IPv4 Address</td><td>Enter an IP address where connections are established to. e.g. 192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 Range</td><td>Enter an IP range of hosts where connections are established to. e.g. 192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>Subnet/mask</td><td>Enter a subnet address where connections are established to. e.g. 192.168.1.0/255.255.255.0</td>
+	<tr>
+	<tr>
+		<td>LAN</td><td>Select LAN as the destination where connections are established to.</td>
+	<tr>
+	<tr>
+		<td>DMZ</td><td>Select DMZ as the destination where connections are established to.</td>
+	<tr>
+	<tr>
+		<td>WAN</td><td>Select WAN as the destination where connections are established to.</td>
+	<tr>
+	<tr>
+		<td>Localhost</td><td>Select localhost as the destination where connections are established to.</td>
+	<tr>
+	<tr>
+		<td>Any</td><td>Select any destination where connections are established to.</td>
+	<tr>
+	<tr>
+		<td>group@</td><td>Select a group defined in [System/IP Group] as the destination where connections are established to. e.g. group@number(name)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>Select an FQDN number defined in [System/FQDN] as the destination where connections are established to. e.g. FQDN@number(domain name)</td>
+	</tr>
+	<tr>
+		<td rowspan="6">Service</td>
+	</tr>
+	<tr>
+		<td>Any</td><td>No service will be matched.</td>
+	</tr>
+	<tr>
+		<td>proto@</td><td>Enter a protocol number categorized for specific service to be matched. e.g. proto@1 indicates ICMP packets.</td>
+	</tr>
+	<tr>
+		<td>TCP@</td><td>Enter a TCP number categorized for specific service. e.g. TCP@80 indicates HTTP packets.</td>
+	</tr>
+	<tr>
+		<td>UDP@</td><td>Enter a UDP number categorized for specific service. e.g. UDP@53 indicates DNS packets.</td>
+	</tr>
+	<tr>
+		<td>group@</td><td>Enter a group number (defined in [System/IP Group]) categorized for specific service. e.g. group@number(name)</td>
+	</tr>
+	<tr>
+		<td>Conn/Sec</td><td colspan="2">This indicates the connection number allowed to pass through XteraLink per second.<br>Connections that exceed the number entered will be aborted by XteraLink.</td>
+	</tr>
+	<tr>
+		<td rowspan="3">Log</td>
+	</tr>
+	<tr>
+		<td>Unchecked (Disable)</td><td>The record of connection number per second that exceeds configured value will not be logged in the page of [Log/View].</td>
+	</tr>
+	<tr>
+		<td>Checked (Enable)</td><td>The record of connection number per second that exceeds configured value will be logged in the page of [Log/View] once every 5 minutes.</td>
+	</tr>	
+</table>
+</body>
+</html>

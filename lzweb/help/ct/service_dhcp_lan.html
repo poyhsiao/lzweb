@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Service/DHCP (LAN)</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>DHCP (區域網路)</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="6">IPv4 DHCP (區域網路) 設定</td>
+		<td colspan="2">在這個表格裡可以設定網路時間伺服器、閘道器、網路遮罩、DHCP 地址範圍、固定配置</td>
+	</tr>
+	<tr> 
+		<td>網域名稱伺服器</td>
+		<td>選擇分派給區域網路主機使用的網域名稱伺服器IP地址，例如：192.168.0.254</td>
+	</tr>
+	<tr> 
+		<td>閘道器</td>
+		<td>選擇分派給區域網路主機所使用的閘道器，例如：192.168.0.1<br>注意：設定的閘道器必須是 系統/網路設定/區域網路設定/IPv4 子網路設定/IP 地址/範圍 內的設定的IP 地址</td>
+	</tr>
+	<tr> 
+		<td>網路遮罩</td>
+		<td>選擇分派給區域網路主機所加入的區域網路的網路遮罩，例如：255.255.255.0<br>注意：設定的網路遮罩必須包含在現有區域網路的網路遮罩內</td>
+	</tr>	
+	<tr> 
+		<td>DHCP 地址範圍</td>
+		<td>填入分派給區域網路主機使用的動態地址IP範圍，例如：<br>起始地址：192.168.0.10<br>結束地址：192.168.0.20<br>注意：設定的起始地址以及結束地址必須包含在現有區域網路的網路遮罩內</td>
+	</tr>
+	<tr> 
+		<td>固定配置</td>
+		<td>填入分派給區域網路主機使用的固定IP地址以及對應MAC地址，例如：<br>MAC 地址：xx:xx:xx:xx:xx:xx <br> IP 地址：192.168.0.100<br>注意：設定的IP地址必須包含在現有區域網路的網路遮罩內</td>
+	</tr>	
+</table>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>System/Summary</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+<h1>Summary</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="6">System Information</td>
+		<td colspan="2">This table summarizes basic system information, including Version, Serial Number, Uptime, Connections, CPU Usage % and etc.</td>
+	</tr>
+	<tr> 
+		<td>Version</td><td>Current firmware version of this <span>XteraLink</span></td>
+	</tr>
+	<tr> 
+		<td height="16">Serial Number</td><td height="16">Serial Number of this <span>XteraLink</span></td>
+	</tr>
+	<tr> 
+		<td>Uptime</td><td>Time since last reboot</td>
+	</tr>
+	<tr>
+		<td>Connections</td><td>Number of total active connections </td>
+	</tr>
+	<tr> 
+		<td>CPU Usage %</td><td>The percentage of CPU loading</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="11">Port Information</td>
+		<td colspan="2">This table displays basic information of Interface currently in use, including IPv4 Address, Status, Rx (Kbps), Tx (Kbps), Detection, Reconnect, Connection Time, and Label.</td>
+	</tr>
+	<tr> 
+		<td>Interface</td><td>Current network interfaces of XteraLink in use, such as WAN, LAN, DMZ, etc.</td>
+	</tr>
+	<tr> 
+		<td>DDNS Host</td><td>The domain name obtained from DDNS. e.g. xxx.com</td>
+	</tr>
+	<tr> 
+		<td>IPv4 Address</td><td>The first IPv4 address of the interface, e.g. 192.168.1.1<br>Unknown: N/A</td>
+	</tr>
+	<tr> 
+		<td>Status</td><td>Status of network interface, e.g.<br>Down: network interface disconnected<br>10/Half, 10/Full, 100/Half, 100/Full: current connection rate of network interface<br>Unknown: Unknown network interface<br>WCDMA, HSPA: the connection mode currently used by USB 3G network card.</td>
+	</tr>
+	<tr> 
+		<td>Rx (Kbps)</td><td>Traffic data received per second (Kbps)</td>
+	</tr>
+	<tr> 
+		<td>Tx (Kbps)</td><td>Traffic data sent per second (Kbps)</td>
+	</tr>
+	<tr> 
+		<td>Detection</td><td>WAN status detection, e.g.<br><img src="/image/state-alive.gif">: WAN connection is active <br><img src="/image/state-dead.gif">: Failed to detect WAN connection<br> N/A: Not available (WAN detection only)</td>
+	</tr>
+	<tr> 
+		<td>Reconnect</td><td>Re-establish WAN connection<br>N/A: Not available (PPPoE and DHCP only)</td>
+	</tr>
+	<tr> 
+		<td>Connection Time</td><td>Time of WAN connection being active<br>N/A: Not available (PPPoE and DHCP only)</td>
+	</tr>
+	<tr> 
+		<td>Label</td><td>User-defined WAN name<br>N/A: Not available (WAN only)</td>
+	</tr>
+</table>  
+</body>
+</html>

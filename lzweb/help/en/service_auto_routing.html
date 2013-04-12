@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Service/Auto Routing</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>Auto Routing</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="10">Auto Routing Setting</td><td colspan="3">This table allows you to configure Method, Parameters, and Persistence Time for each rule.</td>
+	</tr>
+	<tr>
+		<td>Method</td><td>Select whether auto routing should be based on weight or traffic. e.g. <br>Weight: Auto Routing is determined by user-defined parameters. <br>Traffic: XteraLink will establish new connection on low-traffic WAN link based on current traffic flow.</td>
+	</tr>
+	<tr>
+		<td>Parameters</td><td>If Weight is selected as the method, please enter the weight ratio of each WAN link. e.g.<br>WAN1:WAN2:WAN3<br>1:1:1</td>
+	</tr>
+	<tr>
+		<td>Persistence Time</td><td>Enter a duration time for persistent routing.</td>
+	</tr>	
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="60">IPv4 Rules</td><td colspan="3">This table allows you to configure Source, Destination, Service, Failover, Persistent and Log for each rule.</td>
+	</tr>
+	<tr>
+		<td rowspan="18">Source</td>
+	</tr>
+	<tr>
+		<td>IPv4 Address</td><td>Packets from a specified IP address will be matched. e.g. 192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 Range </td><td>Packets from certain hosts within a specified IP range will be matched. e.g. 192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>Subnet/mask</td><td>Packets from a specified subnet will be matched. e.g. 192.168.1.0/255.255.255.0</td>
+	<tr>
+	<tr>
+		<td>LAN</td><td>Any packet from LAN will be matched.</td>
+	<tr>
+	<tr>
+		<td>DMZ</td><td>Any packet from DMZ will be matched.</td>
+	<tr>
+	<tr>
+		<td>WAN</td><td>Any packet from WAN will be matched.</td>
+	<tr>
+	<tr>
+		<td>Any</td><td>Packets from any IP address will be matched.</td>
+	<tr>
+	<tr>
+		<td>group@</td><td>Packets from a specified group (defined in [System/IP Group]) will be matched. e.g. group@number(name)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>Packets from a specified FQDN number (defined in [System/FQDN]) will be matched. e.g. FQDN@number(domain name)</td>
+	</tr>
+	<tr>
+		<td rowspan="20">Destination</td>
+	</tr>
+	<tr>
+		<td>IPv4 Address</td><td>Packets to a specified IP address will be matched. e.g. 192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 Range</td><td>Packets to certain hosts within a specified IP range will be matched. e.g. 192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>Subnet/mask</td><td>Packets to a specified subnet will be matched. e.g. 192.168.1.0/255.255.255.0</td>
+	<tr>
+	<tr>
+		<td>LAN</td><td>Any packet to LAN will be matched.</td>
+	<tr>
+	<tr>
+		<td>DMZ</td><td>Any packet to DMZ will be matched.</td>
+	<tr>
+	<tr>
+		<td>WAN</td><td>Any packet to WAN will be matched.</td>
+	<tr>
+	<tr>
+		<td>Localhost</td><td>Any packet to the XteraLink will be matched.</td>
+	<tr>
+	<tr>
+		<td>Any</td><td>Packets to any IP address will be matched.</td>
+	<tr>
+	<tr>
+		<td>group@</td><td>Packets to a specified group (defined in [System/IP Group]) will be matched. e.g. group@number(name)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>Packets to a specified FQDN number (defined in [System/FQDN]) will be matched. e.g. FQDN@number(domain name)</td>
+	</tr>
+	<tr>
+		<td rowspan="6">Service</td>
+	</tr>
+	<tr>
+		<td>Any</td><td>No service will be matched.</td>
+	</tr>
+	<tr>
+		<td>proto@</td><td>Packets of services categorized by protocol number will be matched. e.g. proto@1 indicates ICMP packets.</td>
+	</tr>
+	<tr>
+		<td>TCP@</td><td>Packets of services categorized by TCP port will be matched. e.g. TCP@80 indicates HTTP packets.</td>
+	</tr>
+	<tr>
+		<td>UDP@</td><td>Packets of services categorized by UDP port will be matched. e.g. UDP@53 indicates DNS packets.</td>
+	</tr>
+	<tr>
+		<td>group@</td><td>Packets of service group defined in [System/Service Group] will be matched. e.g. group@number(name)</td>
+	</tr>
+	<tr>
+		<td rowspan="2">WAN</td>
+	</tr>
+	<tr>
+		<td>Check</td><td>Select the WAN link that applies Auto Routing.<br>Select one WAN: All connections that matches the IPv4 rule will be routed to this selected WAN.<br>Select more than one WAN: Connections that match the IPv4 rule will be auto routed to one of the selected WAN links based on selected method.</td>
+	</tr>	
+	<tr>
+		<td rowspan="3">Failover</td>
+	</tr>
+	<tr>
+		<td>Checked (Enabled)</td><td>When failover is enabled, system will attempt to match connections with first IPv4 rule, and continue on with the next one if first attempt fails, and so on.</td>
+	</tr>
+	<tr>
+		<td>Unchecked (Disabled)</td><td>When failover is disabled, system will not attempt to match connections with next IPv4 rule if first attempt fails.</td>
+	</tr>
+	<tr>
+		<td rowspan="3">Persistent</td>
+	</tr>
+	<tr>
+		<td>Checked (Enabled)</td><td>When connections match this rule, auto routing will be persistent on selected WAN link(s) based on the persistent time defined.</td>
+	</tr>
+	<tr>
+		<td>Unchecked (Disabled)</td><td>Persistent routing is not applied to selected WAN link(s) even when connections match this rule.</td>
+	</tr>
+	<tr>
+		<td rowspan="3">Log</td>
+	</tr>
+	<tr>
+		<td>Checked (Enabled)</td><td>The record of this rule being used will not be logged to the page of [Log/View/Traffic].</td>
+	</tr>
+	<tr>
+		<td>Unchecked (Disabled)</td><td>The record of this rule being used will be logged to the page of [Log/View/Traffic].</td>
+	</tr>
+</table>	
+</body>
+</html>

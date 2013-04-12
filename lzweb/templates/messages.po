@@ -1,0 +1,749 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-08-27 13:31+CST\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: administration.mako:41
+msgid "Account Setting"
+msgstr ""
+
+#: administration.mako:44 administration.mako:133
+msgid "Name"
+msgstr ""
+
+#: administration.mako:45 administration.mako:137 ip_group.mako:34
+#: service_group.mako:32
+msgid "Group"
+msgstr ""
+
+#: administration.mako:46
+msgid "Add"
+msgstr ""
+
+#: administration.mako:56
+msgid "Maintenance"
+msgstr ""
+
+#: administration.mako:58 administration.mako:59
+msgid "Factory default"
+msgstr ""
+
+#: administration.mako:62 administration.mako:63
+msgid "Reboot"
+msgstr ""
+
+#: administration.mako:70
+msgid "Configuration File"
+msgstr ""
+
+#: administration.mako:72
+msgid "Save Configuration"
+msgstr ""
+
+#: administration.mako:75
+msgid "Save"
+msgstr ""
+
+#: administration.mako:80
+msgid "Restore Configuration"
+msgstr ""
+
+#: administration.mako:84
+msgid "Restore"
+msgstr ""
+
+#: administration.mako:93 administration.mako:99
+msgid "Firmware Update"
+msgstr ""
+
+#: administration.mako:95
+msgid "Current Version"
+msgstr ""
+
+#: administration.mako:104
+msgid "Input update key"
+msgstr ""
+
+#: administration.mako:110
+msgid "Update"
+msgstr ""
+
+#: administration.mako:118
+msgid "Firmware Downgrade"
+msgstr ""
+
+#: administration.mako:122
+msgid "Downgrade"
+msgstr ""
+
+#: administration.mako:144 login.mako:61 network.mako:135
+msgid "Password"
+msgstr ""
+
+#: administration.mako:148
+msgid "Confirm"
+msgstr ""
+
+#: arp_table.mako:28 auto_routing.mako:52 connection_limit.mako:27
+#: firewall.mako:27 ip_group.mako:45 nat.mako:57 network.mako:116
+#: network.mako:169 network.mako:198 network.mako:219 service_group.mako:43
+#: virtual_server.mako:27 wan_detection.mako:81 wan_detection.mako:98
+msgid "Normal Mode"
+msgstr ""
+
+#: arp_table.mako:30
+msgid "Fixed Entries Setting"
+msgstr ""
+
+#: arp_table.mako:36 arp_table.mako:51 arp_table.mako:65
+#: diagnostic_tools.mako:46
+msgid "Interface"
+msgstr ""
+
+#: arp_table.mako:37 arp_table.mako:52 arp_table.mako:69 dhcp.mako:66
+msgid "IP Address"
+msgstr ""
+
+#: arp_table.mako:38 arp_table.mako:53 arp_table.mako:73 dhcp.mako:65
+#: stat_dhcp.mako:48
+msgid "MAC Address"
+msgstr ""
+
+#: arp_table.mako:48
+msgid "Dynamic Entries Setting"
+msgstr ""
+
+#: arp_table.mako:54
+msgid "Fix"
+msgstr ""
+
+#: auto_routing.mako:32
+msgid "Auto Routing Setting"
+msgstr ""
+
+#: auto_routing.mako:34
+msgid "Method"
+msgstr ""
+
+#: auto_routing.mako:36
+msgid "weight"
+msgstr ""
+
+#: auto_routing.mako:37
+msgid "traffic"
+msgstr ""
+
+#: auto_routing.mako:41
+msgid "Parameters"
+msgstr ""
+
+#: auto_routing.mako:45
+msgid "Persistence Time"
+msgstr ""
+
+#: auto_routing.mako:46 wan_detection.mako:62
+msgid "sec"
+msgstr ""
+
+#: auto_routing.mako:55 connection_limit.mako:30 firewall.mako:30 nat.mako:59
+msgid "IPv4 Rules"
+msgstr ""
+
+#: auto_routing.mako:62 auto_routing.mako:90 connection_limit.mako:37
+#: connection_limit.mako:52 firewall.mako:37 firewall.mako:52 nat.mako:65
+#: nat.mako:81
+msgid "Source"
+msgstr ""
+
+#: auto_routing.mako:63 auto_routing.mako:91 connection_limit.mako:38
+#: connection_limit.mako:57 firewall.mako:38 firewall.mako:57 nat.mako:66
+#: nat.mako:86
+msgid "Destination"
+msgstr ""
+
+#: auto_routing.mako:64 auto_routing.mako:92 connection_limit.mako:39
+#: connection_limit.mako:62 firewall.mako:39 firewall.mako:62 nat.mako:67
+#: nat.mako:91 service_group.mako:55 service_group.mako:66
+#: virtual_server.mako:47 virtual_server.mako:79
+msgid "Service"
+msgstr ""
+
+#: auto_routing.mako:65 auto_routing.mako:94 nat.mako:32 network.mako:29
+#: wan_detection.mako:37
+msgid "WAN"
+msgstr ""
+
+#: auto_routing.mako:66 auto_routing.mako:110
+msgid "Failover"
+msgstr ""
+
+#: auto_routing.mako:67 auto_routing.mako:111
+msgid "Persistent"
+msgstr ""
+
+#: auto_routing.mako:68 auto_routing.mako:112 connection_limit.mako:41
+#: connection_limit.mako:71 firewall.mako:41 firewall.mako:71 nat.mako:69
+#: nat.mako:101 virtual_server.mako:39 virtual_server.mako:84
+msgid "Log"
+msgstr ""
+
+#: connection_limit.mako:40 connection_limit.mako:67
+msgid "Conn/Sec"
+msgstr ""
+
+#: date_time.mako:26
+msgid "Date/Time Setting"
+msgstr ""
+
+#: date_time.mako:28
+msgid "Time Zone"
+msgstr ""
+
+#: date_time.mako:36
+msgid "Time Server"
+msgstr ""
+
+#: date_time.mako:42
+msgid "Date"
+msgstr ""
+
+#: date_time.mako:46
+msgid "Time"
+msgstr ""
+
+#: date_time.mako:49
+msgid "Set Date/Time"
+msgstr ""
+
+#: dhcp.mako:27 dns.mako:27
+msgid "DNS Server 1"
+msgstr ""
+
+#: dhcp.mako:31 dns.mako:31
+msgid "DNS Server 2"
+msgstr ""
+
+#: dhcp.mako:35 network.mako:227
+msgid "Subnet/Mask"
+msgstr ""
+
+#: dhcp.mako:39
+msgid "DHCP Range"
+msgstr ""
+
+#: dhcp.mako:47
+msgid "Starting Address"
+msgstr ""
+
+#: dhcp.mako:48
+msgid "Ending Address"
+msgstr ""
+
+#: dhcp.mako:57
+msgid "Static Mapping"
+msgstr ""
+
+#: diagnostic_tools.mako:28
+msgid "Diagnostic Tools"
+msgstr ""
+
+#: diagnostic_tools.mako:30
+msgid "ARP Enforcement"
+msgstr ""
+
+#: diagnostic_tools.mako:31
+msgid "Enforce"
+msgstr ""
+
+#: diagnostic_tools.mako:34
+msgid "IP Conflict Test"
+msgstr ""
+
+#: diagnostic_tools.mako:35
+msgid "Test"
+msgstr ""
+
+#: diagnostic_tools.mako:42
+msgid "Ping & Trace Route"
+msgstr ""
+
+#: diagnostic_tools.mako:44
+msgid "Target IP"
+msgstr ""
+
+#: diagnostic_tools.mako:57
+msgid "Ping"
+msgstr ""
+
+#: diagnostic_tools.mako:58
+msgid "Trace"
+msgstr ""
+
+#: diagnostic_tools.mako:59
+msgid "Stop"
+msgstr ""
+
+#: dns.mako:17
+msgid "DNS Setting"
+msgstr ""
+
+#: dns.mako:19
+msgid "Host Name"
+msgstr ""
+
+#: dns.mako:23 fqdn.mako:29
+msgid "Domain Name"
+msgstr ""
+
+#: firewall.mako:40 firewall.mako:67
+msgid "Action"
+msgstr ""
+
+#: fqdn.mako:25
+msgid "FQDN Setting"
+msgstr ""
+
+#: fqdn.mako:28 stat_fqdn.mako:47
+msgid "No."
+msgstr ""
+
+#: fqdn.mako:39
+msgid "Note: Empty domain name can be acceptable"
+msgstr ""
+
+#: interface.mako:55
+msgid "Logout"
+msgstr ""
+
+#: interface.mako:61
+msgid "Apply"
+msgstr ""
+
+#: interface.mako:62
+msgid "Reload"
+msgstr ""
+
+#: interface.mako:63
+msgid "Help"
+msgstr ""
+
+#: ip_group.mako:47
+msgid "IP Group Rule"
+msgstr ""
+
+#: ip_group.mako:50 network.mako:70 service_group.mako:48 summary.mako:78
+msgid "Label"
+msgstr ""
+
+#: ip_group.mako:57 ip_group.mako:68 network.mako:143 summary.mako:61
+msgid "IPv4 Address"
+msgstr ""
+
+#: login.mako:11
+msgid "Login"
+msgstr ""
+
+#: login.mako:47
+msgid "Language"
+msgstr ""
+
+#: login.mako:51
+msgid "English"
+msgstr ""
+
+#: login.mako:51
+msgid "Simplified Chinese"
+msgstr ""
+
+#: login.mako:51
+msgid "Traditional Chinese"
+msgstr ""
+
+#: login.mako:58
+msgid "Account"
+msgstr ""
+
+#: nat.mako:48 network.mako:66 snmp.mako:23
+msgid "Enable"
+msgstr ""
+
+#: nat.mako:68 nat.mako:96
+msgid "Translate"
+msgstr ""
+
+#: network.mako:43
+msgid "Ethernet"
+msgstr ""
+
+#: network.mako:45
+msgid "Clone MAC"
+msgstr ""
+
+#: network.mako:49
+msgid "MTU"
+msgstr ""
+
+#: network.mako:53
+msgid "Speed/Duplex"
+msgstr ""
+
+#: network.mako:64
+msgid "Basic Subnet"
+msgstr ""
+
+#: network.mako:74
+msgid "WAN Type"
+msgstr ""
+
+#: network.mako:79
+msgid "Downstream"
+msgstr ""
+
+#: network.mako:86
+msgid "Upstream"
+msgstr ""
+
+#: network.mako:97
+msgid "IPv4 Static Type"
+msgstr ""
+
+#: network.mako:100 network.mako:228
+msgid "Gateway"
+msgstr ""
+
+#: network.mako:104 network.mako:157 network.mako:207
+msgid "Netmask"
+msgstr ""
+
+#: network.mako:108 network.mako:161 network.mako:206
+msgid "IP Address/Range"
+msgstr ""
+
+#: network.mako:129
+msgid "PPPoE Type"
+msgstr ""
+
+#: network.mako:131
+msgid "User Name"
+msgstr ""
+
+#: network.mako:139
+msgid "Service Name"
+msgstr ""
+
+#: network.mako:147
+msgid "Daily Redial"
+msgstr ""
+
+#: network.mako:155
+msgid "IPv4 Public IP Passthrough"
+msgstr ""
+
+#: network.mako:200
+msgid "IPv4 Basic Subnet"
+msgstr ""
+
+#: network.mako:221
+msgid "IPv4 Static Routing Subnet"
+msgstr ""
+
+#: network_header.mako:12
+msgid "WAN Setting"
+msgstr ""
+
+#: network_header.mako:13
+msgid "DMZ Setting"
+msgstr ""
+
+#: network_header.mako:14
+msgid "LAN Setting"
+msgstr ""
+
+#: service_group.mako:45
+msgid "Service Group Rule"
+msgstr ""
+
+#: snmp.mako:21
+msgid "SNMP Setting"
+msgstr ""
+
+#: snmp.mako:27
+msgid "Community"
+msgstr ""
+
+#: snmp.mako:31
+msgid "System Name"
+msgstr ""
+
+#: snmp.mako:35
+msgid "System Contact"
+msgstr ""
+
+#: snmp.mako:39
+msgid "System Location"
+msgstr ""
+
+#: stat_bandwidth_utilization.mako:20 stat_wan_detection.mako:28
+msgid "WAN Link"
+msgstr ""
+
+#: stat_bandwidth_utilization.mako:26
+msgid "Traffic Type"
+msgstr ""
+
+#: stat_bandwidth_utilization.mako:28
+msgid "Outbound"
+msgstr ""
+
+#: stat_bandwidth_utilization.mako:29
+msgid "Inbound"
+msgstr ""
+
+#: stat_bandwidth_utilization.mako:31 view.mako:32
+msgid "Refresh"
+msgstr ""
+
+#: stat_dhcp.mako:25 stat_fqdn.mako:25 stat_wan_detection.mako:34
+msgid "Automatic Refresh"
+msgstr ""
+
+#: stat_dhcp.mako:27 stat_fqdn.mako:27 stat_wan_detection.mako:36
+msgid "Disabled"
+msgstr ""
+
+#: stat_dhcp.mako:28 stat_fqdn.mako:28 stat_wan_detection.mako:37
+msgid "Every 3 Seconds"
+msgstr ""
+
+#: stat_dhcp.mako:29 stat_fqdn.mako:29 stat_wan_detection.mako:38
+msgid "Every 6 Seconds"
+msgstr ""
+
+#: stat_dhcp.mako:30 stat_fqdn.mako:30 stat_wan_detection.mako:39
+msgid "Every 9 Seconds"
+msgstr ""
+
+#: stat_dhcp.mako:31 stat_fqdn.mako:31 stat_wan_detection.mako:40
+msgid "Every 15 Seconds"
+msgstr ""
+
+#: stat_dhcp.mako:32 stat_fqdn.mako:32 stat_wan_detection.mako:41
+msgid "Every 21 Seconds"
+msgstr ""
+
+#: stat_dhcp.mako:33 stat_fqdn.mako:33 stat_wan_detection.mako:42
+msgid "Every 30 Seconds"
+msgstr ""
+
+#: stat_dhcp.mako:34 stat_fqdn.mako:34 stat_wan_detection.mako:43
+msgid "Every 39 Seconds"
+msgstr ""
+
+#: stat_dhcp.mako:35 stat_fqdn.mako:35 stat_wan_detection.mako:44
+msgid "Every 51 Seconds"
+msgstr ""
+
+#: stat_dhcp.mako:36 stat_fqdn.mako:36 stat_wan_detection.mako:45
+msgid "Every 63 Seconds"
+msgstr ""
+
+#: stat_dhcp.mako:47
+msgid "Lease IP"
+msgstr ""
+
+#: stat_dhcp.mako:49
+msgid "Client-Hostname"
+msgstr ""
+
+#: stat_dhcp.mako:50
+msgid "Expire Time"
+msgstr ""
+
+#: stat_fqdn.mako:44 stat_fqdn.mako:48
+msgid "FQDN"
+msgstr ""
+
+#: stat_fqdn.mako:49
+msgid "IP1"
+msgstr ""
+
+#: stat_fqdn.mako:50
+msgid "IP2"
+msgstr ""
+
+#: stat_fqdn.mako:51
+msgid "IP3"
+msgstr ""
+
+#: stat_fqdn.mako:52
+msgid "IP4"
+msgstr ""
+
+#: stat_wan_detection.mako:53
+msgid "WAN Detection"
+msgstr ""
+
+#: stat_wan_detection.mako:56 wan_detection.mako:89 wan_detection.mako:106
+msgid "Destination IP"
+msgstr ""
+
+#: stat_wan_detection.mako:57
+msgid "Number of Requests"
+msgstr ""
+
+#: stat_wan_detection.mako:58
+msgid "Number of Replies"
+msgstr ""
+
+#: stat_wan_detection.mako:59
+msgid "Success Ratio (%)"
+msgstr ""
+
+#: summary.mako:26
+msgid "System Information"
+msgstr ""
+
+#: summary.mako:34
+msgid "Version"
+msgstr ""
+
+#: summary.mako:35
+msgid "Serial Number"
+msgstr ""
+
+#: summary.mako:36
+msgid "Uptime"
+msgstr ""
+
+#: summary.mako:37
+msgid "Connections"
+msgstr ""
+
+#: summary.mako:38
+msgid "CPU Usage %"
+msgstr ""
+
+#: summary.mako:44
+msgid "Port Information"
+msgstr ""
+
+#: summary.mako:46
+msgid "Port"
+msgstr ""
+
+#: summary.mako:50
+msgid "LAN"
+msgstr ""
+
+#: summary.mako:51
+msgid "DMZ"
+msgstr ""
+
+#: summary.mako:62
+msgid "Status"
+msgstr ""
+
+#: summary.mako:63
+msgid "Rx (Kbps)"
+msgstr ""
+
+#: summary.mako:64
+msgid "TX (Kbps)"
+msgstr ""
+
+#: summary.mako:65
+msgid "Detection"
+msgstr ""
+
+#: summary.mako:67 summary.mako:69
+msgid "Reconnect"
+msgstr ""
+
+#: summary.mako:74 summary.mako:75
+msgid "N/A"
+msgstr ""
+
+#: summary.mako:77
+msgid "Connection Time"
+msgstr ""
+
+#: syslog.mako:21
+msgid "Syslog Setting"
+msgstr ""
+
+#: syslog.mako:23
+msgid "Server IP"
+msgstr ""
+
+#: syslog.mako:27
+msgid "Facility"
+msgstr ""
+
+#: view.mako:23
+msgid "Log Type"
+msgstr ""
+
+#: view.mako:34
+msgid "Recent Event"
+msgstr ""
+
+#: virtual_server.mako:30 virtual_server.mako:37 virtual_server.mako:58
+msgid "Virtual Server"
+msgstr ""
+
+#: virtual_server.mako:38 virtual_server.mako:72
+msgid "Real Server"
+msgstr ""
+
+#: virtual_server.mako:45 virtual_server.mako:68
+msgid "Port Mapping"
+msgstr ""
+
+#: virtual_server.mako:46 virtual_server.mako:75
+msgid "IPv4"
+msgstr ""
+
+#: wan_detection.mako:28
+msgid "Always Success When There Is Inbound Traffic"
+msgstr ""
+
+#: wan_detection.mako:52
+msgid "Protocol"
+msgstr ""
+
+#: wan_detection.mako:59
+msgid "Detection Period"
+msgstr ""
+
+#: wan_detection.mako:66
+msgid "Number of Targets per Detection"
+msgstr ""
+
+#: wan_detection.mako:72
+msgid "Number of Retries"
+msgstr ""
+
+#: wan_detection.mako:83 wan_detection.mako:100
+msgid "Target List"
+msgstr ""
+
+#: wan_detection.mako:90
+msgid "Hops"
+msgstr ""
+
+#: wan_detection.mako:107
+msgid "TCP Port"
+msgstr ""
+

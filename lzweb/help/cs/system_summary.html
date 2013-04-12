@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>System/Summary</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+<h1>系统信息</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="6">系统状态</td>
+		<td colspan="2">在这个表格里我们可以察看系统的基本信息，例如：目前版本、序号、开机时间、目前联机总数、CPU 使用量 </td>
+	</tr>
+	<tr> 
+		<td>目前版本</td><td>本台<span>XteraLink</span>的版本</td>
+	</tr>
+	<tr> 
+		<td height="16">序号</td><td height="16">本台<span>XteraLink</span>的序号</td>
+	</tr>
+	<tr> 
+		<td>开机时间</td><td>从开机到现在的时间</td>
+	</tr>
+	<tr>
+		<td>目前联机总数</td><td>目前总共的使用中联机数</td>
+	</tr>
+	<tr> 
+		<td>CPU使用量</td><td>CPU目前的负载比率</td>
+	</tr>
+</table>	
+<p>
+<table width="100%" border="1" cellspacing="0">	
+	<tr> 
+		<td rowspan="11">网络接口信息</td>
+		<td colspan="2">在这个表格里我们可以察看系统所有的网络接口以及对应的状态，例如：界面、IPv4 地址、状态、接收(Kbps)、传送 (Kbps)、侦测、重新连接、联机、时间名称</td>
+	</tr>
+	<tr> 
+		<td>界面</td><td>XteraLink目前的网络接口，例如：广域网络、局域网络、隔离区</td>
+	</tr>
+	<tr>
+		<td>动态网域名称</td><td>该网络接口由动态网域名称服务器取得的网域名称，例如：xxx.com</td>
+	</tr>
+	<tr> 
+		<td>IPv4 地址</td><td>该网络接口设定的第一个IPv4 地址，例如：192.168.1.1<br>Unknown：网络接口无设定</td>
+	</tr>
+	<tr> 
+		<td>状态</td><td>网卡的状态，例如：<br>Down：网卡未接线<br>10/Half、10/Full、100/Half、100/Full：网卡目前联机速率<br>Unknown：未知的网卡<br>WCDMA、HSPA：USB 3G网卡目前联机模式</td>
+	</tr>
+	<tr> 
+		<td>接收 (Kbps)</td><td>一秒钟内该网卡接收统计数据的流量、单位(Kbps)</td>
+	</tr>
+	<tr> 
+		<td>传送 (Kbps)</td><td>一秒钟内该网卡传送统计数据的流量、单位(Kbps)</td>
+	</tr>
+	<tr> 
+		<td>侦测</td><td>广域网络侦测结果，例如：<br><img src="/image/state-alive.gif">：侦测正常<br><img src="/image/state-dead.gif">：侦测失败<br> N/A：不支持 (仅支持广域网络)</td>
+	</tr>
+	<tr> 
+		<td>重新连接</td><td>动态广域网络重新联机<br>N/A：不支持(仅支持PPPOE、DHCP广域网络)</td>
+	</tr>
+	<tr> 
+		<td>联机时间</td><td>动态广域网络联机时间<br>N/A：不支持(仅支持PPPOE、DHCP广域网络)</td>
+	</tr>
+	<tr> 
+		<td>名称</td><td>使用者设定的广域网络名称<br>N/A：不支持(仅支持广域网络)</td>
+	</tr>
+</table>  
+</body>
+</html>

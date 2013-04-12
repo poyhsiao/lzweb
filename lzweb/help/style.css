@@ -1,0 +1,99 @@
+body {
+	background-color: #FFFFEE;
+	font-size: 10.0pt;
+	color: #333333;
+}
+
+table {
+	border: .75pt;
+	border-style: solid;
+	border-color: #000000;
+	font-size: 10.0pt;
+	font-family: Arial;
+	color: #333333;
+	font-style: normal
+}
+
+tr{
+	border: 1px;
+	border-style: solid;
+	border-color:  #cccccc;
+}
+th { 
+	font-weight: normal; 
+	background-color: #EEEEEE;
+	text-align: left; 
+	font-style: normal;
+	}
+	
+td {
+	border: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+}
+
+a {  color: #0000FF; 
+	text-decoration: underline;
+
+}
+
+a:hover {  color: #FF0000; text-decoration: none; position: relative; left: 1px; top: 1px}
+
+
+h1 {
+	color:#333333;
+	font-family:Arial;
+	font-size: 11.0pt;
+	background-color: #cccccc;
+	font-style: normal;
+}
+h2 {
+	font-family:Arial;
+	font-size: 10.5pt;
+	color:#333333;
+	font-style: bold;
+}
+
+p {
+font-family:Arial;
+font-size:10.0pt;
+font-style:normal;
+color:#333333
+}
+
+text {
+font-family:Arial;
+font-size:10.0pt;
+font-style:normal;
+color:#333333
+}
+
+li {
+	font-family:Arial;
+	font-size:10.0pt;
+	font-style:normal;
+	color:#333333;
+}
+
+.MsoNormal {
+	font-family:Arial;
+	font-size:10.0pt;
+
+}
+
+.MsoNormal2 {
+	font-family:Arial;
+	font-size:10.0pt;
+
+}
+
+.MsoNormal3 {
+	font-family:Arial;
+	font-size:10.0pt;
+}
+span {
+	lang: EN-US;
+	}
+
+.spandstd {  color: #0000FF; text-decoration: underline; cursor: hand;}
+

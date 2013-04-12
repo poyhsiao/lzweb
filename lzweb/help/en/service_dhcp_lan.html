@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Service/DHCP (LAN)</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>DHCP (LAN)</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="6">IPv4 DHCP (LAN) Setting</td>
+		<td colspan="2">This table allows you to configure DNS Server, Gateway, Netmask, DHCP Range, and Static Mapping.</td>
+	</tr>
+	<tr>  
+		<td>DNS Server</td>
+		<td>Enter the IP address of the DNS server assigned for hosts in LAN. e.g. 192.168.0.254</td>
+	</tr>
+	<tr> 
+		<td>Gateway</td>
+		<td>Enter a gateway IP for hosts in LAN. e.g. 192.168.0.1<br>Note: The IP address of gateway must be one of those defined in [System/Network Setting/LAN Setting/IPv4 Basic Subnet/IP Address/Range].</td>
+	</tr>
+	<tr> 
+		<td>Netmask</td>
+		<td>Enter a netmask for hosts added in LAN. e.g. 255.255.255.0<br>Note: The netmask configured must be included in existing LAN's netmask.</td>
+	</tr>	
+	<tr> 
+		<td>DHCP Range</td>
+		<td>Enter a range of dynamic IP addresses assigned for hosts in LAN. e.g. <br>Starting Address: 192.168.0.10<br>Ending Address: 192.168.0.20<br>Note: The Starting and Ending addresses must be included in existing LAN's netmask.</td>
+	</tr>
+	<tr> 
+		<td>Static Mapping</td>
+		<td>Enter a static IP address and corresponding MAC address of the host in LAN. e.g.<br>MAC Address: xx:xx:xx:xx:xx:xx <br> IP Address: 192.168.0.100<br>Note: The IP address configured must be included in existing LAN's netmask.</td>
+	</tr>	
+</table>
+</body>
+</html>

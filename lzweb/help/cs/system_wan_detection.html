@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>System/WAN Detection</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+<h1>广域网络侦测</h1>
+<p>
+在这个页面可以针对各广域网络联机的侦测方式做设定，XteraLink本身使用ICMP和TCP封包对网络的联机状态做侦测，依照回传的状况决定此广域网络联机是否正常。
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td>当有对内流量,总是成功</td>
+		<td>当不启用(Disable)此设定时，XteraLink就不会利用对内的广域网络流量来判断线路联机状况<br>当启用(Enable)此设定时，只要XteraLink有侦测到 对内的广域网络流量，就判定此路广域网络联机是属于正常联机状态，而不再进行icmp和tcp封包的侦测行为</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">	
+	<tr>
+		<td>广域网络</td>
+		<td>选择欲设定的广域网络联机</td>
+	<tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">		
+	<tr>
+		<td>协定</td>
+		<td>可选择要进行广域网络联机状态侦测的方式，可分成ICMP和TCP两种</td>
+	<tr>
+	<tr>
+		<td>侦测周期</td>
+		<td>表示每次侦测的时间间隔，以秒表示，间隔短表示可以更快发现目前的联机状况，不过也会消耗比较多的带宽</td>
+	<tr>
+	<tr>
+		<td>每次侦测所选出之目标数量</td>
+		<td>在每次侦测的时候，随机从目标清单选出不同的IP地址的数量做侦测，不可高于目标清单的数量</td>
+	<tr>
+	<tr>
+		<td>重试次数</td>
+		<td>发生错误时的重测次数，重复上述的测试多次，如果所有的测试都失败，XteraLink则宣告此广域网络联机无法运作</td>
+	<tr>	
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">	
+	<tr> 
+		<td rowspan="6">目标清单</td>
+		<td colspan="2">协议为ICMP封包状态下</td>
+	</tr>
+	<tr>
+		<td>目标 IP 地址</td><td>利用Ping来进行网络侦测的主机地址</td>
+	</tr>
+	<tr>
+		<td>跃点</td><td>这个ping的存活时间 (time to live) 是由参数「跃点」 (Hops)所定义，一般设定为3</td>
+	</tr>
+	<tr>
+		<td colspan="2">协议为TCP封包状态下</td>
+	</tr>
+		<tr>
+		<td>目标 IP 地址</td><td>利用TCP connect来进行网络侦测的主机地址</td>
+	</tr>
+	<tr>
+		<td>TCP 端口</td><td>指定「通讯端口」 (Port)的数值</td>
+	</tr>
+</table>
+</body>
+</html>

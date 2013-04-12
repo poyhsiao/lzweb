@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Service/Virtual Server</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>虚拟主机</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="60">IPv4 规则设定 </td><td colspan="4">在这个表格里可以针对每条规则设定虚拟主机、真实服务器、日志</td>
+	</tr>
+	<tr>
+		<td rowspan="13">虚拟主机</td>
+	</tr>
+	<tr>
+		<td rowspan="4">广域网络 1</td>
+	</tr>
+	<tr>
+		<td>无</td><td colspan="2">设定此广域网络无虚拟主机</td>
+	</tr>
+	<tr>
+		<td>自动设定</td><td colspan="2">自动设定一组IPv4地址为此广域网络的虚拟主机的IPv4 地址<br>
+										  当此广域网络在 系统/网络设定/广域网络设定/子网络设定/启用 打勾，XteraLink会依照广域网络类型分配一个IPv4地址，例如：<br>
+										  固定：使用 系统/网络设定/广域网络设定/IPv4 静态模式/IP 地址/范围 的第一个IP地址<br>
+										  PPPoe：使用该广域网络利用PPPoe分配到的第一个IP地址 <br>
+										  DHCP 动态配址： 使用该广域网络利用DHCP分配到IP地址 
+						 </td>
+	</tr>
+	<tr>
+		<td>IPv4 地址</td><td>手动设定一组IPv4地址为此广域网络的虚拟主机，例如：192.168.1.10</td>
+	</tr>		
+	<tr>
+		<td>广域网络 2</td><td colspan="3">同广域网络 1</td>
+	</tr>
+	<tr>
+		<td>广域网络 3</td><td colspan="3">同广域网络 1</td>
+	</tr>	
+	<tr>
+		<td rowspan="6">服务</td>
+	</tr>
+	<tr>
+		<td>任何服务</td><td>虚拟服务器使用任何服务项目</td>
+	</tr>
+	<tr>
+		<td>协议@</td><td>虚拟服务器使用协议号码分类的服务封包，例如：协定@1 为 ICMP 封包</td>
+	</tr>
+	<tr>
+		<td>TCP@</td><td>虚拟服务器使用以TCP通讯端口号码分类的服务封包，例如：TCP@80 为 HTTP 封包</td>
+	</tr>
+	<tr>
+		<td>UDP@</td><td>虚拟服务器使用以UDP通讯端口号码分类的服务封包，例如：UDP@53 为 DNS 封包</td>
+	</tr>
+	<tr>
+		<td>群组@</td><td>虚拟服务器使用符合 系统/网络服务群组设定 分页中规则的封包，例如：群组@号码(名称)</td>
+	</tr>	
+	<tr>
+		<td rowspan="3">真实服务器</td>
+	</tr>
+	<tr>
+		<td>IPv4</td><td colspan="2">设定一组IPv4地址为此实际主机在隔离区或局域网络子网络的IP地址</td>
+	</tr>
+	<tr>
+		<td>端口对应</td><td colspan="2">设定实际主机的对应通讯端口</td>
+	</tr>
+	<tr>
+		<td rowspan="3">日志</td>
+	</tr>
+	<tr>
+		<td>不打勾(Disable)</td><td colspan="2">当此条规则有被引用到时不会加入 日志/记录浏览/流量 分页中</td>
+	</tr>
+	<tr>
+		<td>打勾(Enable)</td><td colspan="2">当此条规则有被引用到时会加入 日志/记录浏览/流量 分页中</td>
+	</tr>
+</table>
+<p>
+<p>
+注意：<br>
+(1)当 虚拟主机/服务 设定为 任何服务、协议@、群组@ 时，使用者无法设定 真实服务器/端口对应，即虚拟主机对应相同的服务至真实服务器<br>
+<p>
+(2)当 虚拟主机/服务 设定为 TCP@ 时，使用者必须设定 真实服务器/端口对应，例如：<br>
+[单一端口对应]	虚拟主机/服务 为 TCP@80，真实服务器/端口对应 应为 TCP@80 (TCP＠22对应到TCP@80)<br>
+[单一端口转换]	虚拟主机/服务 为 TCP@22，真实服务器/端口对应 应为 TCP@23 (TCP@22转换到TCP@23)<br>
+[多端口对应]	虚拟主机/服务 为 TCP@22-25，真实服务器/端口对应 应为 TCP@22-25 (TCP＠22对应到TCP@22，TCP＠23对应到TCP@23，以此类推)<br>
+[多端口转换]	虚拟主机/服务 为 TCP@22-25，真实服务器/端口对应 应为 TCP@32-35 (TCP＠22转换到TCP@32，TCP＠23转换到TCP@33，以此类推)<br>
+<p>
+(3)当 虚拟主机/服务 设定为 UDP@ 时，使用者必须设定 真实服务器/端口对应，例如：<br>
+[单一端口对应]	虚拟主机/服务 为 UDP@80，真实服务器/端口对应 应为 UDP@80 (UDP＠22对应到UDP@80)<br>
+[单一端口转换]	虚拟主机/服务 为 UDP@22，真实服务器/端口对应 应为 UDP@23 (UDP@22转换到UDP@23)<br>
+[多端口对应]	虚拟主机/服务 为 UDP@22-25，真实服务器/端口对应 应为 UDP@22-25 (UDP＠22对应到UDP@22，UDP＠23对应到UDP@23，以此类推)<br>
+[多端口转换]	虚拟主机/服务 为 UDP@22-25，真实服务器/端口对应 应为 UDP@32-35 (UDP＠22转换到UDP@32，UDP＠23转换到UDP@33，以此类推)<br>
+<p>
+(4) TCP与UDP无法做端口对应或转换，必须是TCP对TCP或UDP对UDP
+<p>
+(5) 多端口对应或转换时，虚拟主机/服务 与 真实服务器/端口对应 必须是相同的端口数量
+</body>
+</html>

@@ -1,0 +1,227 @@
+<html>
+<head>
+<title>System/Setting</title>
+<link	rel="stylesheet" href="../style.css" type="text/css">
+<meta	http-equiv="Content-Type"	content="text/html;	charset=utf-8">
+</head>
+<body>
+<h1>WAN	Setting</h1>
+<p>
+<table width="100%"	border="1" cellspacing="0">
+	<tr>
+		<td>WAN</td><td>Select a WAN number	from the drop-down menu.</td>
+	</tr>
+</table>
+<p>
+<table width="100%"	border="1" cellspacing="0">
+	<tr>
+		<td	rowspan="4">Ethernet</td><td colspan="2">This	table	includes configurations of the WAN's corresponding network card, such as Clone MAC, MTU and Speed/Duplex. </td>
+	</tr>
+	<tr>
+		<td>Clone	MAC</td><td>Set	up a MAC address for the selected	WAN.</td>
+	</tr>
+	<tr>
+		<td>MTU</td><td>Administrators are allowed to	define the size	of every packet	here.	Large	data will	be transmitted	in several packets.</td>
+	</tr>
+	<tr>
+		<td>Speed/Duplex</td><td>Select	a	speed/duplex transmission	option from	the	drop-down	menu for the selected	WAN.</td>
+	</tr>
+</table>
+<p>
+<table width="100%"	border="1" cellspacing="0">
+	<tr>
+		<td	rowspan="20">Basic Setting</td><td	colspan="5">This table allows	you	to make	configurations of	the	basic	subnet.</td>
+	</tr>
+	<tr>
+		<td>Enable</td><td colspan="4">When	disabled (unchecked),	the	selected WAN will	be unavailable.<br>When	enabled	(checked), configurations	of the selected	WAN	will take	effect after applied.</td>
+	</tr>
+	<tr>
+		<td>Label</td><td	colspan="4">Enter	a	name for the selected	WAN.</td>
+	</tr>
+	<tr>
+		<td	rowspan="14">WAN Type</td><td	colspan="4">Select a protocol	type from	the	drop-down	menu:	Static,	PPPoE	and	DHCP.</td>
+	</tr>
+	<tr>
+		<td	rowspan="5">Static</td><td colspan="3">When	selected,	an IPv4	Static Type	table	below	will appear	for	configuration.</td>
+	</tr>
+	<tr>
+		<td	rowspan="4">IPv4 Static	Type</td><td colspan="2">This	table	includes configurations	of Gateway,	Netmask, and IP	address/Range.</td>
+	</tr>
+	<tr>
+		<td>Gateway</td>	<td>The	IP address of	your ISP,	i.e. the default gateway.	e.g. 211.21.40.254</td>
+	</tr>
+	<tr>
+		<td>Netmask</td><td>The	allocated	netmask	from ISP.	e.g. 255.255.255.0</td>
+	</tr>
+	<tr>
+		<td>IP Address/Range</td><td>The allocated IP	address	or IP	range	from ISP.<br>IP	Address: e.g.	211.21.40.32<br>IP Range:	e.g. 211.21.40.32-211.21.40.42</td>
+	</tr>
+	<tr>
+		<td	rowspan="7">PPPoE</td><td	colspan="3">When selected, a PPPoE Type	table	will appear	for	configuration.</td>
+	</tr>
+	<tr>
+		<td	rowspan="6">PPPoE Type</td><td colspan="2">This table includes configurations of User Name, Password, Service Name, IPv4 Address, and Daily Redial.</td>
+	</tr>
+	<tr>
+		<td>User Name</td><td>The username required for dial-up connection to ISP.</td>
+	</tr>
+	<tr>
+		<td>Password</td><td>The password required for dial-up connection to ISP.</td>
+	</tr>
+	<tr>
+		<td>Service Name</td><td>The name of the service required for dial-up connection.</td>
+	</tr>
+	<tr>
+		<td>IPv4 Address</td><td>The IP address requested from ISP.</td>
+	</tr>
+	<tr>
+		<td>Daily Redial</td><td>Because some ISPs tend to automatically disconnect PPPoE lines regularly at certain time, XteraLink will re-establish connection for every disconnected PPPoE line simultaneously when detected.<br>In order to avoid multiple line redial, you may set up different redial time here for different WAN lines.<br>After setting redial time (HH:MM), the system will redial to establish connection for the PPPoE line at the configured time.</td>
+	</tr>
+	<tr>
+		<td>DHCP</td><td colspan="3">When selected, IPs are allocated dynamically for connections.</td>
+	</tr>	
+	<tr>
+		<td>Downstream</td><td colspan="4">The download rate of this line, e.g. 512	(Kbps)</td>
+	</tr>
+	<tr>
+		<td>Upstream</td><td colspan="4">The upload rate of this line, e.g. 512	(Kbps)</td>
+	</tr>	
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="6">USB Modem Status</td><td colspan="2">This table allows you to view details of Status, Brand/Model, Operator, Mode and Quality.</td>
+	</tr>
+	<tr>
+		<td>Status</td><td>This indicates the status of the USB modem, e.g.<br> Unknown: USB modem not supported or Not connected to USB modem<br>Plug: Connected to USB modem<br>PIN Error: Incorrect PIN entry<br> Dial-in Failed: Unable to dial in<br> Dial-in OK: Dialed in successfully</td>
+	</tr>
+	<tr>
+		<td>Brand/model</td><td>This indicates the brand/model of the USB modem in use. e.g. huawei/E177</td>
+	</tr>
+	<tr>
+		<td>Operator</td><td>This indicates the current operator of the USB modem. e.g. Chunghwa Telecom</td>
+	</tr>
+	<tr>
+		<td>Mode</td><td>This indicates how USB modem is connected currently. e.g.<br>via WCDMA  (Wide band Code Division Multiple Access)<br>via HSPA  (High Speed Packet Access)</td>
+	</tr>
+	<tr>
+		<td>Quality</td><td>This illustrates the signal quality of the USB modem. e.g.<br><img src="/image/signal-0.gif"> No signal<br><img src="/image/signal-1.gif">Low reception<br><img src="/image/signal-2.gif">Moderate reception<br><img src="/image/signal-3.gif">Strong reception<br><img src="/image/signal-4.gif">Best reception</td>
+	</tr>
+</table>	
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="7">3G/3.5G Dial-up Setting</td><td colspan="2">This table allows you to configure the PIN, dial number, APN, user name, password and MTU.</td>
+	</tr>
+	<tr>
+		<td>PIN</td><td>This indicates the PIN code (Personal identification number) of the SIM card. e.g. 0000</td>
+	</tr>
+	<tr>
+		<td>APN</td><td>This indicates the APN (Access Point Name) used. e.g. internet</td>
+	</tr>
+	<tr>
+		<td>Dial number</td><td>This indicates the number to dial up. e.g. *99#</td>
+	</tr>
+	<tr>
+		<td>User Name</td><td>This indicates the user name used for dial-up account. e.g. xxxx</td>
+	</tr>
+	<tr>
+		<td>Password</td><td>This indicates the password used for dial-up account. e.g. xxxx</td>
+	</tr>
+	<tr>
+		<td>MTU</td><td>This indicates the MTU (Maximum transmission unit) after dialed in. e.g. 1500</td>
+	</tr>
+</table>	
+<p>
+<table width="100%"	border="1" cellspacing="0">
+	<tr>
+		<td	rowspan="2">IPv4 Public IP Passthrough</td><td	colspan="2">This table allows you to add an IP address/range of the subnet in the selected WAN, while the IP addresses of hosts behind DMZ can be set up for IP Passthrough.</td>
+	</tr>
+	<tr>
+		<td>IP Address/Range</td><td>The IP address/range of hosts behind DMZ<br>IP address: e.g. 211.21.40.33<br>IP Range: e.g. 211.21.40.43-211.21.40.53</td>
+	</tr>
+</table>
+<p>
+<h1>DMZ Setting </h1>
+<p>
+<table width="100%"	border="1" cellspacing="0">
+	<tr>
+		<td	rowspan="4">Ethernet</td><td colspan="2">This	table	includes configurations of the DMZ's corresponding network card, such as Clone MAC, MTU and Speed/Duplex. </td>
+	</tr>
+	<tr>
+		<td>Clone	MAC</td><td>Set	up a MAC address for the DMZ.</td>
+	</tr>
+	<tr>
+		<td>MTU</td><td>Administrators are allowed to	define the size	of every packet	here.	Large	data will	be transmitted	in several packets.</td>
+	</tr>
+	<tr>
+		<td>Speed/Duplex</td><td>Select	a	speed/duplex transmission	option from	the	drop-down	menu for the DMZ.</td>
+	</tr>
+</table>
+<p>
+<table width="100%"	border="1" cellspacing="0">
+	<tr>
+		<td	rowspan="4">IPv4 Basic Subnet</td><td colspan="2">This table includes configurations of IP Address/Range and Netmask.</td>
+	</tr>
+	<tr>
+		<td>IP Address/Range</td><td>The IP address/range of XteraLink in DMZ, as well as the default gateway in DMZ.<br>IP Address: e.g. 192.168.10.1	<br>IP Range: e.g. 192.168.10.1-192.168.10.10</td>
+	</tr>
+	<tr>
+		<td>Netmask</td><td>The netmask of XteraLink in DMZ, e.g. 255.255.255.0</td>
+	</tr>
+</table>
+<p>
+<table width="100%"	border="1" cellspacing="0">
+	<tr>
+		<td	rowspan="4">IPv4 Static Routing Subnet</td><td colspan="2">This table includes configurations of Subnet/Mask and Gateway.</td>
+	</tr>
+	<tr>
+		<td>Subnet/Mask</td><td>A private network segment in DMZ.</td>
+	</tr>
+	<tr>
+		<td>Gateway</td><td>The gateway where static routing is used in the private network segment.</td>
+	</tr>
+</table>
+<p>
+<h1>LAN Setting</h1>
+<p>
+<table width="100%"	border="1" cellspacing="0">
+	<tr>
+		<td	rowspan="4">Ethernet</td><td colspan="2">This	table	includes configurations of the LAN's corresponding network card, such as Clone MAC, MTU and Speed/Duplex. </td>
+	</tr>
+	<tr>
+		<td>Clone	MAC</td><td>Set	up a MAC address for the LAN.</td>
+	</tr>
+	<tr>
+		<td>MTU</td><td>Administrators are allowed to	define the size	of every packet	here.	Large	data will	be transmitted	in several packets.</td>
+	</tr>
+	<tr>
+		<td>Speed/Duplex</td><td>Select	a	speed/duplex transmission	option from	the	drop-down	menu for the LAN.</td>
+	</tr>
+</table>
+<p>
+<table width="100%"	border="1" cellspacing="0">
+	<tr>
+		<td	rowspan="4">IPv4 Basic Subnet</td><td colspan="2">This table includes configurations of IP Address/Range and Netmask.</td>
+	</tr>
+	<tr>
+		<td>IP Address/ Range</td><td>The IP address/range of XteraLink in LAN, as well as the default gateway in LAN.<br>IP Address: e.g. 192.168.0.1 <br>IP Range: e.g. 192.168.0.1-192.168.0.10</td>
+	</tr>
+	<tr>
+		<td>Netmask</td><td>The netmask of XteraLink in LAN, e.g. 255.255.255.0</td>
+	</tr>
+</table>
+<p>
+<table width="100%"	border="1" cellspacing="0">
+	<tr>
+		<td	rowspan="4">IPv4 Static Routing Subnet</td><td colspan="2">This table includes configurations of Subnet/Mask and Gateway.</td>
+	</tr>
+	<tr>
+		<td>Subnet/Mask</td><td>A private network segment in LAN.</td>
+	</tr>
+	<tr>
+		<td>Gateway</td><td>The gateway where static routing is used in the private network segment.</td>
+	</tr>
+</table>
+</body>
+</html>

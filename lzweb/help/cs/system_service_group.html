@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>System/Service Group</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+<h1>网络服务群组设定</h1>
+<p>
+可自行定义特一TCP/UDP port 或 protocal number为指定的群组，为网络中特定的应用程序或服务器定义相关的port，可应用在服务选单的虚拟主机/防火墙/连接限制/自动路由/网址转译分页中的服务中
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td>群组</td><td>选择欲设定的群组号码，XteraLink支持最多32个网络服务群组</td>
+	</tr>
+</table>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr> 
+		<td rowspan="3">网络服务群组规则</td>
+		<td colspan="2">在这个表格里我们可以设定对应网络服务群组的规则</td>
+	</tr>
+	<tr>
+		<td>名称</td>
+		<td>给定一个群组名称,此群组名称会出现服务选单各分页中的服务下拉选单中</td>
+	</tr>
+	<tr>
+		<td>服务</td>
+		<td>在此输入欲加入的IPv4地址,，例如：<br>单一protocol：protol@XX<br>单一port：TCP@XXX，UDP@XXX <br>一段连续的port：TCP@XXX-YYY，UDP@XXX-YYY</td>
+	</tr>
+</table>
+</body>
+</html>

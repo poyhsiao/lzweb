@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Service/Connection Limit</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>連線限制</h1>
+<p>
+<table width="100%" border="1" cellspacing="0">
+	<tr>
+		<td rowspan="60">IPv4 規則設定 </td><td colspan="3">在這個表格裡可以針對每條規則設定來源、目的地、服務、連線/秒、紀錄</td>
+	</tr>
+	<tr>
+		<td rowspan="18">來源</td>
+	</tr>
+	<tr>
+		<td>IPv4 地址</td><td>比對來自單一IP的封包，例如：192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 地址範圍</td><td>比對來自一段IP地址的封包，用在某幾台主機，例如：192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>子網路/遮罩</td><td>比對來自某一個網段的封包，例如： 192.168.1.0/255.255.255.0</td>
+	<tr>
+	<tr>
+		<td>區域網路</td><td>比對來自區域網路的任何封包</td>
+	<tr>
+	<tr>
+		<td>隔離區</td><td>比對來自隔離區的任何封包</td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>比對來自廣域網路的任何封包</td>
+	<tr>
+	<tr>
+		<td>任何地址</td><td>比對來源為任何封包</td>
+	<tr>
+	<tr>
+		<td>群組@</td><td>選擇比對來源符合 系統/IP群組設定 分頁中規則的封包，例如：群組@號碼(名稱)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>選擇比對來源符合 系統/FQDN 分頁中規則的封包，例如：FQDN@編號(網域名稱)</td>
+	</tr>
+	<tr>
+		<td rowspan="20">目的地</td>
+	</tr>
+	<tr>
+		<td>IPv4 地址</td><td>比對目的地為單一IP的封包，例如：192.168.1.4</td>
+	<tr>
+	<tr>
+		<td>IPv4 地址範圍</td><td>比對目的地為一段IP地址的封包，用在某幾台主機，例如：192.168.1.10-192.168.1.20</td>
+	<tr>
+	<tr>
+		<td>子網路/遮罩</td><td>比對目的地為某一個網段的封包，例如： 192.168.1.0/255.255.255.0</td>
+	<tr>
+	<tr>
+		<td>區域網路</td><td>比對目的地為區域網路的任何封包</td>
+	<tr>
+	<tr>
+		<td>隔離區</td><td>比對目的地為隔離區的任何封包</td>
+	<tr>
+	<tr>
+		<td>廣域網路</td><td>比對目的地為廣域網路的任何封包</td>
+	<tr>
+	<tr>
+		<td>本機地址</td><td>比對目的地為這台XteraLink本身的封包</td>
+	<tr>
+	<tr>
+		<td>任何地址</td><td>比對目的地為任何封包</td>
+	<tr>
+	<tr>
+		<td>群組@</td><td>選擇比對目的地符合 系統/IP群組設定 分頁中規則的封包，例如：群組@號碼(名稱)</td>
+	<tr>	
+	<tr>
+		<td>FQDN@</td><td>選擇比對目的地符合 系統/FQDN 分頁中規則的封包，例如：FQDN@編號(網域名稱)</td>
+	</tr>
+	<tr>
+		<td rowspan="6">服務</td>
+	</tr>
+	<tr>
+		<td>任何服務</td><td>不過濾任何服務項目</td>
+	</tr>
+	<tr>
+		<td>協定</td><td>比對以協定號碼分類的服務封包，例如：協定@1 為 ICMP 封包</td>
+	</tr>
+	<tr>
+		<td>TCP@</td><td>比對以TCP通訊埠號碼分類的服務封包，例如：TCP@80 為 HTTP 封包</td>
+	</tr>
+	<tr>
+		<td>UDP@</td><td>比對以UDP通訊埠號碼分類的服務封包，例如：UDP@53 為 DNS 封包</td>
+	</tr>
+	<tr>
+		<td>群組@</td><td>選擇比對符合 系統/網路服務群組設定 分頁中規則的封包，例如：群組@號碼(名稱)</td>
+	</tr>
+	<tr>
+		<td>連線/秒</td><td colspan="2">設定每秒可通過XteraLink的連線數<br>每秒超過此連線數的連線，將會被Xteralink丟棄</td>
+	</tr>
+	<tr>
+		<td rowspan="3">紀錄</td>
+	</tr>
+	<tr>
+		<td>不打勾(Disable)</td><td>當符合此規則的連線數大於 連線/秒 的設定時不會顯示在 紀錄/記錄瀏覽/流量 分頁中</td>
+	</tr>
+	<tr>
+		<td>打勾(Enable)</td><td>當符合此規則的連線數大於 連線/秒 的設定時 XteraLink會每5分鐘紀錄超過此設定的連線數在 紀錄/記錄瀏覽/流量 分頁中</td>
+	</tr>	
+</table>
+</body>
+</html>
